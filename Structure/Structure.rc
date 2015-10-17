@@ -1,0 +1,2814 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CHILDFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_FILE_NEW
+        MENUITEM "&Open...",                    ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        POPUP "&Export"
+        BEGIN
+            MENUITEM "E&xcel .xls file",            IDM_EXPORT_EXCEL
+            MENUITEM "&Access .mdb file",           IDM_EXPORT_ACCESS
+            MENUITEM SEPARATOR
+            MENUITEM "AutoCad .dxf file",           IDM_EXPORT_AUTOCAD
+        END
+        POPUP "&Import"
+        BEGIN
+            MENUITEM "E&xcel .xls file",            IDM_IMPORT_EXCEL
+            MENUITEM "&Access .mdb file",           IDM_IMPORT_ACCESS
+            MENUITEM SEPARATOR
+            MENUITEM "AutoCad .dxf file",           IDM_IMPORT_AUTOCAD
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Define"
+    BEGIN
+        MENUITEM "&Material",                   IDM_DEFINE_MATERIAL
+        MENUITEM "&Frame Sections",             IDM_DEFINE_FRAME_SECTION
+        MENUITEM "Area Sections",               IDM_DEFINE_SLAB_SECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Static Load Cases",          IDM_LOAD_CASE
+        MENUITEM "&Non-linear Static Cases",    IDM_NONLINEAR_CASE
+        MENUITEM "&Modal Analysis Cases",       IDM_MODAL_CASE
+        MENUITEM "Response &History Cases",     IDM_RESPONSE_CASE
+        MENUITEM "Response &Spectrum Cases",    IDM_RESPONSE_SPECTRUM
+        MENUITEM "Buckling Analysis Cases",     IDM_BUCKLING
+        MENUITEM SEPARATOR
+        POPUP "&Function"
+        BEGIN
+            MENUITEM "&Time History",               IDM_TIME_HISTORY_FUNC
+            MENUITEM "&Response Spectrum",          IDM_SPECTRUM_FUNC
+        END
+        MENUITEM SEPARATOR
+        POPUP "Combinations"
+        BEGIN
+            MENUITEM "Define Load Combinations",    IDM_LOAD_COMBO
+            MENUITEM "Add Default Design Combinations", IDM_DESIGN_COMBOS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Joint Constraints",          IDM_CONSTRAINT
+        MENUITEM "&Group",                      IDM_GROUP
+        MENUITEM "&Coordinate System",          IDM_SYSTEM
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo          Ctrl+Z",       IDM_UNDO
+        MENUITEM "&Redo          Ctrl+Y",       IDM_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy",                       IDM_COPY
+        MENUITEM "&Paste",                      IDM_PASTE
+        MENUITEM "C&ut",                        IDM_CUT
+        MENUITEM "&Delete",                     IDM_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Join Members",               IDM_MEMBER_JOIN
+        MENUITEM "&Break Member",               IDM_MEMBER_BREAK
+        MENUITEM SEPARATOR
+        MENUITEM "Join Slabs",                  IDM_SLAB_JOIN
+        MENUITEM "Break slab",                  IDM_SLAB_BREAK
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Display Options",            IDM_DISPLAY_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&RubberBand Zoom",            IDM_RUBBERZOOM
+        MENUITEM "&Restore Full View",          IDM_RESTOREVIEW
+        MENUITEM "Zoom &In One Step",           IDM_ZOOMIN
+        MENUITEM "Zoom &Out One Step",          IDM_ZOOMOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Pan",                        IDM_PAN
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Grids",                 IDM_SHOWGRIDS
+        MENUITEM "Show &Origin",                IDM_SHOWORIGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh",                    IDM_REFRESH
+    END
+    POPUP "&Select"
+    BEGIN
+        POPUP "&Select"
+        BEGIN
+            MENUITEM "&All",                        IDM_SELECT_ALL
+            MENUITEM "&Joints",                     IDM_SELECT_ALL_JOINTS
+            MENUITEM "&Members",                    IDM_SELECT_ALL_MEMBERS
+            MENUITEM "&Slabs",                      IDM_SELECT_ALL_SLABS
+            MENUITEM "&Frame Section...",           IDM_SELECT_SECTION
+            MENUITEM "&Area Section...",            IDM_SELECT_ASECTION
+            MENUITEM "&Joint Constraints...",       IDM_SELECT_CONSTRAINT
+            MENUITEM "&Group...",                   IDM_SELECT_GROUP
+            MENUITEM "&Labels...",                  IDM_SELECT_LABELS
+        END
+        POPUP "&Deselect"
+        BEGIN
+            MENUITEM "&All",                        IDM_DESELECT_ALL
+            MENUITEM "&Joints",                     IDM_DESELECT_ALL_JOINTS
+            MENUITEM "&Members",                    IDM_DESELECT_ALL_MEMBERS
+            MENUITEM "&Slabs",                      IDM_DESELECT_ALL_SLABS
+            MENUITEM "&Frame Section...",           IDM_DESELECT_SECTION
+            MENUITEM "&Area Section...",            IDM_DESELECT_ASECTION
+            MENUITEM "&Joint Constraints...",       IDM_DESELECT_CONSTRAINT
+            MENUITEM "&Group...",                   IDM_DESELECT_GROUP
+            MENUITEM "&Labels...",                  IDM_DESELECT_LABELS
+        END
+        MENUITEM "&Invert Selection",           IDM_INVERT_SELECTION
+        MENUITEM "&From all",                   IDM_SELECT_FROM_ALL
+    END
+    POPUP "&Assign"
+    BEGIN
+        POPUP "&Joint"
+        BEGIN
+            MENUITEM "&Restraints",                 IDM_JOINT_RESTRAINT
+            POPUP "Constraints"
+            BEGIN
+                MENUITEM "&One for all",                IDM_JOINT_CONSTRAINT
+                MENUITEM "&One for each Z",             IDM_JOINT_CONSTRAINTZ
+                MENUITEM "&One for each Y",             IDM_JOINT_CONSTRAINTY
+                MENUITEM "&One for each X",             IDM_JOINT_CONSTRAINTX
+            END
+            MENUITEM "Local Axes...",               IDM_JOINT_AXIS
+            MENUITEM "&Masses",                     IDM_JOINT_MASS
+        END
+        POPUP "Joint &Loads"
+        BEGIN
+            MENUITEM "&Forces",                     IDM_JOINT_FORCE
+            MENUITEM "&Displacement",               IDM_JOINT_DISPLACEMENT
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Member"
+        BEGIN
+            MENUITEM "&Section",                    IDM_MEMBER_SECTION
+            MENUITEM "&Tapered Section",            IDM_TAPERED_SECTION
+            MENUITEM SEPARATOR
+            MENUITEM "&Releases",                   IDM_MEMBER_RELEASE
+            MENUITEM "Local Axes...",               IDM_MEMBER_AXIS
+            MENUITEM SEPARATOR
+            MENUITEM "&Divisions",                  IDM_MEMBER_DIVISIONS
+        END
+        POPUP "Member &Loads"
+        BEGIN
+            MENUITEM "&Point",                      IDM_MEMBER_POINT
+            MENUITEM "&Distributed",                IDM_MEMBER_DISTRIBUTED
+            MENUITEM SEPARATOR
+            MENUITEM "Strain",                      IDM_MEMBER_STRAIN
+        END
+        MENUITEM SEPARATOR
+        POPUP "Slab"
+        BEGIN
+            MENUITEM "&Section",                    IDM_SLAB_SECTION
+            MENUITEM SEPARATOR
+            MENUITEM "Local Axes...",               IDM_SLAB_AXIS
+            MENUITEM "Reverse local Z axis",        IDM_SLAB_REVERSE_AXIS
+            MENUITEM SEPARATOR
+            MENUITEM "Divisions",                   IDM_SLAB_DIVISIONS
+        END
+        POPUP "Slab &Load"
+        BEGIN
+            MENUITEM "&Distributed",                IDM_SLAB_DISTRIBUTED
+            MENUITEM SEPARATOR
+            MENUITEM "Strain",                      IDM_SLAB_STRAIN
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Group",                      IDM_ASSIGN_GROUP
+    END
+    POPUP "D&raw"
+    BEGIN
+        MENUITEM "&Joint",                      IDM_ADD_JOINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Straight Member",            IDM_ADD_MEMBER
+        MENUITEM "&Curved Member",              IDM_ADD_CURVED_MEMBER
+        MENUITEM "&Quick Member",               IDM_QUICK_DRAW_MEMBER
+        MENUITEM SEPARATOR
+        MENUITEM "&Rectangular Area",           IDM_ADD_RECT_AREA
+        MENUITEM "&Polygon Area",               IDM_ADD_QUAD_AREA
+    END
+    POPUP "A&nalysis"
+    BEGIN
+        MENUITEM "&Run",                        IDM_RUN_ANALYSIS
+        MENUITEM "&Options",                    IDM_ANALYSIS_OPTIONS
+        MENUITEM "&Show Result",                IDM_SHOW_RESULT
+    END
+    POPUP "Display"
+    BEGIN
+        MENUITEM "Force Diagrams",              IDM_DIAGRAMS
+        MENUITEM "&Joint reactions",            IDM_REACTIONS
+        MENUITEM "Joint displacements",         IDM_DISPLACEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "Slab Diagrams",               IDM_SLAB_DIAGRAMS
+        MENUITEM SEPARATOR
+        MENUITEM "&Deformed shape",             IDM_DEFLECTED
+        MENUITEM "Undeformed shape",            IDM_SHOW_LOADS
+        MENUITEM SEPARATOR
+        MENUITEM "&Plot functions",             IDM_PLOT_FUNCTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Show Tables....",             IDM_SHOW_TABLES
+    END
+    POPUP "De&sign"
+    BEGIN
+        MENUITEM "&Run",                        IDM_DESIGN
+        MENUITEM "Run &Selected",               IDM_DESIGN_SELECTED
+        MENUITEM "&Options",                    IDM_DESIGN_OPTIONS
+        MENUITEM "&Show Result",                IDM_SHOW_DESIGN_RESULT
+        MENUITEM SEPARATOR
+        MENUITEM "Verify",                      IDM_DESIGN_VERIFY
+        MENUITEM SEPARATOR
+        MENUITEM "&Prepare AutoCAD Drawing",    IDM_PREPARE_DRAWING
+        MENUITEM "Prepare Drawing for Selected", IDM_PREPARE_DRAWING_SELECTED
+    END
+    POPUP "&Options"
+    BEGIN
+        POPUP "&Windows"
+        BEGIN
+            MENUITEM "&One",                        IDM_ONE_WINDOWS
+            MENUITEM "&Two",                        IDM_TWO_WINDOWS
+            MENUITEM "&Three",                      IDM_THREE_WINDOWS
+            MENUITEM "&Four",                       IDM_FOUR_WINDOWS
+        END
+        MENUITEM SEPARATOR
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&Main",                       IDM_MAINTOOL
+            MENUITEM "&Analysis",                   IDM_ANALYSISTOOL
+            MENUITEM "&Design",                     IDM_DESIGNTOOL
+            MENUITEM "&Assigns",                    IDM_ASSIGNTOOL
+            MENUITEM "&Draw",                       IDM_DRAWTOOL
+            MENUITEM "&Select",                     IDM_SELECTTOOL
+            MENUITEM "&View",                       IDM_VIEWTOOL
+            MENUITEM "S&nap",                       IDM_SNAPTOOL
+            MENUITEM "&Edit",                       IDM_EDITTOOL
+        END
+        MENUITEM "&Reset Toolbars",             IDM_RESET_TOOLBARS
+        MENUITEM SEPARATOR
+        MENUITEM "Misclaneous",                 IDM_MISC_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Colors",                     IDM_COLORS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_FILE_NEW
+        MENUITEM "&Open",                       ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        POPUP "&Import"
+        BEGIN
+            MENUITEM "E&xcel .xls file",            IDM_IMPORT_EXCEL
+            MENUITEM "&Access .mdb file",           IDM_IMPORT_ACCESS
+            MENUITEM "AutoCad .dxf file",           IDM_IMPORT_AUTOCAD
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ico"
+IDR_CHILDFRAME          ICON                    "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CARTESIAN_GRID DIALOG  0, 0, 126, 143
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Cartesian"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NXGRID,53,20,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NYGRID,53,35,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NZGRID,53,49,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XGRID,53,84,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YGRID,53,100,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZGRID,53,115,42,13,ES_AUTOHSCROLL
+    LTEXT           "Z",IDC_STATIC,35,49,13,13
+    LTEXT           "Y",IDC_STATIC,35,35,13,13
+    LTEXT           "X",IDC_STATIC,35,20,13,13
+    GROUPBOX        "Number of Grids",IDC_STATIC,23,9,75,55
+    LTEXT           "X",IDC_STATIC,35,84,13,13
+    LTEXT           "Y",IDC_STATIC,35,100,13,13
+    GROUPBOX        "Spacing",IDC_STATIC,23,75,75,55
+    LTEXT           "Z",IDC_STATIC,35,115,13,13
+END
+
+IDD_JOINT_RESTRAINT DIALOG  0, 0, 157, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Jont Restraints"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,90,85,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,143,98
+    GROUPBOX        "Restraints",IDC_STATIC,25,15,75,62
+    CONTROL         "UX",IDC_UX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,31,26,10
+    CONTROL         "UY",IDC_UY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,45,26,10
+    CONTROL         "UZ",IDC_UZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,58,26,10
+    CONTROL         "RX",IDC_RX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,31,26,10
+    CONTROL         "RY",IDC_RY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,45,26,10
+    CONTROL         "RZ",IDC_RZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,58,26,10
+    PUSHBUTTON      "Fixed",IDC_FIXED,111,19,23,13
+    PUSHBUTTON      "Pin",IDC_PINNED,111,33,23,13
+    PUSHBUTTON      "Roller",IDC_ROLLER,111,47,23,13
+    PUSHBUTTON      "Free",IDC_FREE,111,61,23,13
+END
+
+IDD_EDITGRID DIALOG  0, 0, 202, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,205,43,13
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,125,205,44,13
+    CONTROL         "X",IDC_X,"Button",BS_AUTORADIOBUTTON | WS_GROUP,48,46,21,10
+    CONTROL         "Y",IDC_Y,"Button",BS_AUTORADIOBUTTON,96,46,21,10
+    GROUPBOX        "Direction",IDC_STATIC,14,39,167,20
+    LISTBOX         IDC_LOCLIST,20,94,55,77,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOC,20,80,55,13,ES_AUTOHSCROLL
+    GROUPBOX        "Grid  Location:",IDC_STATIC,16,68,67,110
+    PUSHBUTTON      "Delete Grid Line",IDC_DELETE,102,119,71,15
+    DEFPUSHBUTTON   "Add Grid Line",IDC_ADD,102,81,71,15
+    PUSHBUTTON      "Move Grid Line",IDC_MOVE,102,100,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,102,137,71,15
+    GROUPBOX        "Click to:",IDC_STATIC,94,68,87,110
+    CONTROL         "Z",IDC_Z,"Button",BS_AUTORADIOBUTTON,140,46,21,10
+    EDITTEXT        IDC_NAME,69,15,71,15,ES_AUTOHSCROLL
+    GROUPBOX        "Name:",IDC_STATIC,45,6,108,28
+    PUSHBUTTON      "New",IDC_NEW,102,157,71,15
+    PUSHBUTTON      "System Origin",IDC_ORIGIN,50,185,95,15
+END
+
+IDD_JOINT_LOAD DIALOG  0, 0, 212, 177
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,155,50,14
+    GROUPBOX        "Options",IDC_STATIC,105,85,95,51
+    CONTROL         "Add to existing load",IDC_ADD_TO_EXISTING,"Button",BS_AUTORADIOBUTTON | WS_GROUP,110,94,77,10
+    CONTROL         "Replace existing load",IDC_REPLACE_EXISTING,"Button",BS_AUTORADIOBUTTON,110,109,87,10
+    CONTROL         "Delete existing load",IDC_DELETE_EXISTING,"Button",BS_AUTORADIOBUTTON,110,125,77,10
+    LTEXT           "UX",IDC_STATIC,22,45,18,13
+    LTEXT           "UY",IDC_STATIC,22,59,18,13
+    EDITTEXT        IDC_UX,48,45,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UY,48,59,42,13,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,10,35,89,102
+    LTEXT           "UZ",IDC_STATIC,22,74,18,13
+    EDITTEXT        IDC_UZ,48,74,42,13,ES_AUTOHSCROLL
+    LTEXT           "RX",IDC_STATIC,22,89,18,13
+    LTEXT           "RY",IDC_STATIC,22,104,18,13
+    EDITTEXT        IDC_RX,48,89,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RY,48,104,42,13,ES_AUTOHSCROLL
+    LTEXT           "RZ",IDC_STATIC,22,118,18,13
+    EDITTEXT        IDC_RZ,48,118,42,13,ES_AUTOHSCROLL
+    GROUPBOX        "Coordinate Systerm",IDC_STATIC,104,35,95,35
+    COMBOBOX        IDC_LOADCASE,23,11,83,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Load Case",IDC_STATIC,15,0,98,28
+    EDITTEXT        IDC_COVER,5,0,125,35,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+    COMBOBOX        IDC_SYSTEM,110,50,80,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SLAB_DISTRIBUTED DIALOG  0, 0, 307, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Distribute Slab Loads"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,121,110,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,195,110,50,14
+    EDITTEXT        IDC_UNIFORM,52,110,48,13,ES_AUTOHSCROLL
+    LTEXT           "Uniform:",IDC_STATIC,16,110,31,13
+    GROUPBOX        "Options",IDC_STATIC,185,40,105,60
+    CONTROL         "Add to existing load",IDC_ADD_TO_EXISTING,"Button",BS_AUTORADIOBUTTON | WS_GROUP,189,54,83,10
+    CONTROL         "Replace existing load",IDC_REPLACE_EXISTING,"Button",BS_AUTORADIOBUTTON,189,68,83,10
+    CONTROL         "Delete existing load",IDC_DELETE_EXISTING,"Button",BS_AUTORADIOBUTTON,189,83,83,10
+    GROUPBOX        "Load Direction",IDC_STATIC,15,40,83,60
+    GROUPBOX        "Coordinate Systerm",IDC_STATIC,101,40,79,40
+    COMBOBOX        IDC_LOADDIR,24,53,70,40,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Force",IDC_FORCETYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,23,68,34,10
+    CONTROL         "Moment",IDC_MOMENTTYPE,"Button",BS_AUTORADIOBUTTON,23,83,41,10
+    COMBOBOX        IDC_SYSTEM,106,55,70,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LOADCASE,24,11,83,52,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Load Case",IDC_STATIC,16,0,98,28
+END
+
+IDD_DATABASE DIALOG  0, 0, 222, 152
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,125,50,14
+    LISTBOX         IDC_DATA_LIST,16,18,104,92,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Database",IDC_STATIC,7,7,123,113
+    PUSHBUTTON      "Add New",IDC_DATA_ADD,145,15,60,14
+    PUSHBUTTON      "Delete",IDC_DATA_DELETE,145,35,60,14
+    PUSHBUTTON      "Modify",IDC_DATA_MODIFY,145,55,60,14
+    PUSHBUTTON      "Import",IDC_DATA_IMPORT,145,75,60,14
+    PUSHBUTTON      "Export",IDC_DATA_EXPORT,145,95,60,14
+END
+
+IDD_MATERIAL_PROPERTY DIALOG  0, 0, 360, 222
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Material Property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,95,200,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,200,50,14
+    EDITTEXT        IDC_NAME,86,15,50,15,ES_AUTOHSCROLL
+    CTEXT           "Name:",IDC_STATIC,36,15,46,13,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,19,7,156,30
+    EDITTEXT        IDC_ELASTICITY,115,55,48,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POISON,115,74,48,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNITWEIGHT,115,95,48,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THERMAL_COEFF,115,135,48,15,ES_AUTOHSCROLL
+    RTEXT           "Modulus of Elasticity:",IDC_STATIC,40,55,71,10,SS_CENTERIMAGE
+    RTEXT           "Coefficient of therm. expa.",IDC_STATIC,25,135,86,10,SS_CENTERIMAGE
+    RTEXT           "Unit Weight:",IDC_STATIC,40,95,71,10,SS_CENTERIMAGE
+    RTEXT           "Poison's ratio:",IDC_STATIC,40,74,71,10,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,20,40,155,150
+    EDITTEXT        IDC_SHEAR_MODULUS,115,156,48,15,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Shear Modulus:",IDC_STATIC,40,156,71,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_FCK,268,58,48,15,ES_AUTOHSCROLL
+    LTEXT           "fck:",IDC_STATIC,217,58,45,15
+    EDITTEXT        IDC_FCTK,268,78,48,15,ES_AUTOHSCROLL
+    LTEXT           "fctk:",IDC_STATIC,217,78,45,15
+    EDITTEXT        IDC_FYK,268,95,48,15,ES_AUTOHSCROLL
+    LTEXT           "fyk:",IDC_STATIC,217,95,45,15
+    EDITTEXT        IDC_FYKS,268,114,48,15,ES_AUTOHSCROLL
+    LTEXT           "fyks:",IDC_STATIC,217,114,45,15
+    EDITTEXT        IDC_FTK,268,132,48,15,ES_AUTOHSCROLL
+    LTEXT           "ftk:",IDC_STATIC,217,132,45,15
+    EDITTEXT        IDC_FTKS,268,151,48,15,ES_AUTOHSCROLL
+    LTEXT           "ftks:",IDC_STATIC,217,151,45,15
+    GROUPBOX        "Design Data",IDC_STATIC,210,40,115,150
+    COMBOBOX        IDC_TYPE,240,15,74,69,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Type of Design",IDC_STATIC,210,5,115,30
+    EDITTEXT        IDC_DENSITY,115,114,48,15,ES_AUTOHSCROLL
+    RTEXT           "Density:",IDC_STATIC,40,114,71,10,SS_CENTERIMAGE
+    LTEXT           "Es:",IDC_STATIC,218,170,45,15
+    EDITTEXT        IDC_ES,268,170,48,15,ES_AUTOHSCROLL
+END
+
+IDD_SECTION_PROPERTY DIALOGEX 0, 0, 447, 292
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Section Property"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,195,265,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,310,265,50,14
+    EDITTEXT        IDC_SECTION_NAME,45,15,67,15,ES_AUTOHSCROLL
+    GROUPBOX        "Name",IDC_STATIC,15,5,120,30
+    EDITTEXT        IDC_WIDTH,75,79,50,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT,75,101,50,15,ES_AUTOHSCROLL
+    LTEXT           "width:",IDC_STATIC,25,79,40,15,SS_CENTERIMAGE
+    LTEXT           "height:",IDC_STATIC,25,102,40,15,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,15,71,120,149
+    LTEXT           "A(axial):",IDC_STATIC,165,20,41,9
+    LTEXT           "Ix:",IDC_STATIC,165,35,41,9
+    LTEXT           "Iy:",IDC_STATIC,165,50,41,9
+    LTEXT           "Iz:",IDC_STATIC,165,65,41,9
+    GROUPBOX        "Properties",IDC_STATIC,145,5,290,135
+    LTEXT           "Material Name:",IDC_STATIC,21,235,50,10
+    GROUPBOX        "",IDC_STATIC,15,225,141,55
+    COMBOBOX        IDC_MATERIAL_LIST,80,235,68,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit Material",IDC_EDIT_MATERIAL,37,255,98,15
+    PUSHBUTTON      "Reinforcement bars",IDC_EDIT_REBAR,315,215,79,18
+    LTEXT           "",IDC_DRAWING,175,160,105,94,SS_SUNKEN | WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Type",IDC_STATIC,15,39,120,32
+    COMBOBOX        IDC_TYPE,47,49,68,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RADIUS,75,123,50,15,ES_AUTOHSCROLL
+    LTEXT           "radius:",IDC_STATIC,25,125,40,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Interaction Chart",IDC_CHART,315,175,79,18
+    EDITTEXT        IDC_TW,75,145,50,15,ES_AUTOHSCROLL
+    LTEXT           "web thick.",IDC_STATIC,25,145,40,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_TH,75,167,50,15,ES_AUTOHSCROLL
+    LTEXT           "flange thick.",IDC_STATIC,25,168,40,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_BDIST,75,190,50,15,ES_AUTOHSCROLL
+    LTEXT           "b/b distance",IDC_STATIC,25,190,40,15,SS_CENTERIMAGE
+    LTEXT           "Az(shear):",IDC_STATIC,165,80,41,9
+    LTEXT           "Ay(shear):",IDC_STATIC,165,96,41,9
+    LTEXT           "Zy:",IDC_STATIC,295,22,41,9
+    LTEXT           "Zz:",IDC_STATIC,295,36,41,9
+    LTEXT           "Sy:",IDC_STATIC,295,52,41,9
+    LTEXT           "Sz:",IDC_STATIC,295,66,41,9
+    LTEXT           "ry:",IDC_STATIC,295,81,41,9
+    LTEXT           "rz:",IDC_STATIC,295,97,41,9
+    EDITTEXT        IDC_AREA,215,20,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IYY,215,50,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IXX,215,35,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IZZ,215,65,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AZ,215,80,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AY,215,95,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZY,345,20,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZZ,345,35,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SY,345,50,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SZ,345,65,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RY,345,80,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RZ,345,95,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set stiffness modifiers",IDC_SET_MODIFIERS,220,115,130,15
+END
+
+IDD_MEMBER_DATA DIALOG  0, 0, 347, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Member Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,190,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,190,50,14
+    GROUPBOX        "",IDC_STATIC,7,0,328,210
+    GROUPBOX        "",IDC_STATIC,25,75,115,105
+    PUSHBUTTON      "Edit Sections",IDC_EDIT_SECTION,35,85,91,15
+    LISTBOX         IDC_FORCE_LIST,168,25,140,145,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Forces",IDC_STATIC,160,15,158,165
+    PUSHBUTTON      "Edit JI",IDC_EDIT_JI,33,28,91,15
+    PUSHBUTTON      "Edit JII",IDC_EDIT_JII,33,52,91,15
+    GROUPBOX        "Joints",IDC_STATIC,25,15,115,57
+    PUSHBUTTON      "Edit Member Releases",IDC_EDIT_RELEASE,35,110,91,15
+    PUSHBUTTON      "Edit Local Axis",IDC_EDIT_AXIS,35,135,91,15
+    PUSHBUTTON      "Edit Member Divisions",IDC_EDIT_DIVISIONS,35,155,91,15
+END
+
+IDD_JOINT_DATA DIALOG  0, 0, 300, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Joint Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,142,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,142,50,14
+    GROUPBOX        "Coordinates",IDC_STATIC,10,7,115,50
+    PUSHBUTTON      "Edit Restraint",IDC_EDIT_RESTRAINT,25,72,76,15
+    PUSHBUTTON      "Edit Local Axis",IDC_EDIT_AXIS,25,106,76,15
+    LISTBOX         IDC_FORCE_LIST,140,15,140,107,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Assignments: Force/Displacement/Mass",IDC_STATIC,132,5,158,127
+    CONTROL         "List1",IDC_JPOINT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSCROLL | WS_BORDER | WS_TABSTOP,20,17,95,30
+END
+
+IDD_MEMBER_BREAK DIALOG  0, 0, 155, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Break Member"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,60,50,14
+    EDITTEXT        IDC_BREAKN,81,17,41,14,ES_AUTOHSCROLL
+    LTEXT           "Break in to:",IDC_STATIC,27,16,43,14,SS_CENTERIMAGE
+    LTEXT           "By ratio:",IDC_STATIC,27,35,43,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_BREAKR,81,36,41,14,ES_AUTOHSCROLL
+END
+
+IDD_DISPLAY DIALOG  0, 0, 362, 152
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Display Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,130,50,14
+    CONTROL         "Label",IDC_DJOINT_LABEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,33,44,10
+    CONTROL         "Restraint",IDC_DJOINT_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,47,44,10
+    CONTROL         "Label",IDC_DMEMBER_LABEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,30,43,10
+    CONTROL         "Section",IDC_DMEMBER_SECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,45,43,10
+    CONTROL         "Material",IDC_DMEMBER_MATERIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,60,43,10
+    GROUPBOX        "Member",IDC_STATIC,105,20,65,100
+    GROUPBOX        "Joint",IDC_STATIC,23,21,64,99
+    CONTROL         "Shown",IDC_DJOINT_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,61,38,10
+    CONTROL         "Origin",IDC_DORIGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,31,34,10
+    GROUPBOX        "Miscleneous",IDC_STATIC,260,20,85,100
+    CONTROL         "Load",IDC_DJOINT_LOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,75,32,10
+    CONTROL         "Load",IDC_DMEMBER_LOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,75,32,10
+    CONTROL         "Grid",IDC_DGRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,44,34,10
+    CONTROL         "Apply to all",IDC_APPLY_TO_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,130,49,11
+    CONTROL         "Local Axis",IDC_DMEMBER_AXIS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,90,48,10
+    CONTROL         "Local Axis",IDC_DJOINT_AXIS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,89,48,10
+    CONTROL         "Constraints",IDC_DCONSTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,57,48,10
+    CONTROL         "Numbering",IDC_DNUMBERING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,70,48,10
+    CONTROL         "Label",IDC_DSLAB_LABEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,31,43,10
+    CONTROL         "Section",IDC_DSLAB_SECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,45,43,10
+    CONTROL         "Material",IDC_DSLAB_MATERIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,59,43,10
+    GROUPBOX        "Slab",IDC_STATIC,185,20,65,100
+    CONTROL         "Load",IDC_DSLAB_LOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,73,32,10
+    CONTROL         "Local Axis",IDC_DSLAB_AXIS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,87,48,10
+    CONTROL         "Extrude Sections",IDC_DEXTRUDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,85,69,10
+    CONTROL         "Release",IDC_DMEMBER_RELEASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,105,42,10
+END
+
+IDD_FORCE_DIAGRAM DIALOG  0, 0, 152, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Internal Force Diagrams"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,115,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,115,50,14
+    GROUPBOX        "Load Direction",IDC_STATIC,31,15,83,59
+    CONTROL         "FX",IDC_FX,"Button",BS_AUTORADIOBUTTON | WS_GROUP,45,31,25,10
+    CONTROL         "FY",IDC_FY,"Button",BS_AUTORADIOBUTTON,45,42,25,10
+    CONTROL         "FZ",IDC_FZ,"Button",BS_AUTORADIOBUTTON,45,55,25,10
+    CONTROL         "MXX",IDC_MXX,"Button",BS_AUTORADIOBUTTON,77,31,31,10
+    CONTROL         "MYY",IDC_MYY,"Button",BS_AUTORADIOBUTTON,77,45,31,10
+    CONTROL         "MZZ",IDC_MZZ,"Button",BS_AUTORADIOBUTTON,77,55,31,10
+    CONTROL         "Fill Diagram",IDC_FILLDIAGRAM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,80,56,11
+    CONTROL         "Show values",IDC_SHOWVALUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,100,57,10
+END
+
+IDD_MEMBER_RELEASE DIALOG  0, 0, 194, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Member Releases"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,44,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,105,129,50,14
+    CONTROL         "UX",IDC_NUX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,26,26,10
+    CONTROL         "UY",IDC_NUY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,41,26,10
+    CONTROL         "UZ",IDC_NUZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,57,26,10
+    CONTROL         "RX",IDC_NRX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,71,26,10
+    CONTROL         "RY",IDC_NRY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,86,26,10
+    CONTROL         "RZ",IDC_NRZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,102,26,10
+    GROUPBOX        "Near end release",IDC_STATIC,21,14,65,103
+    CONTROL         "UX",IDC_FUX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,26,26,10
+    CONTROL         "UY",IDC_FUY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,41,26,10
+    CONTROL         "UZ",IDC_FUZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,57,26,10
+    CONTROL         "RX",IDC_FRX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,71,26,10
+    CONTROL         "RY",IDC_FRY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,86,26,10
+    CONTROL         "RZ",IDC_FRZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,102,26,10
+    GROUPBOX        "Far end release",IDC_STATIC,103,14,65,103
+END
+
+IDD_REBAR_DATA DIALOG  0, 0, 417, 162
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Reinforcement Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,95,135,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,245,135,50,14
+    CONTROL         "Coulmn",IDC_COULMN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,39,26,71,10
+    CONTROL         "Beam",IDC_BEAM,"Button",BS_AUTORADIOBUTTON,133,25,48,10
+    CONTROL         "Rectangular",IDC_RECTANGULAR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,215,26,71,10
+    CONTROL         "Circular",IDC_CIRCULAR,"Button",BS_AUTORADIOBUTTON,309,26,48,10
+    EDITTEXT        IDC_COVER,133,63,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BARSIZE,133,84,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SBARSIZE,133,105,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NZ,319,60,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NY,319,79,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOTAL,319,100,56,14,ES_AUTOHSCROLL
+    GROUPBOX        "Design type",IDC_STATIC,29,14,169,27
+    GROUPBOX        "Reinforcement pattern",IDC_STATIC,205,15,171,26
+    GROUPBOX        "Dimensions",IDC_STATIC,30,50,172,75
+    LTEXT           "Cover:",IDC_STATIC,39,66,40,11
+    LTEXT           "Number of bars in Z",IDC_STATIC,225,63,69,14
+    LTEXT           "Number of bars in Y",IDC_STATIC,225,82,69,14
+    LTEXT           "Total",IDC_STATIC,225,103,69,14
+    LTEXT           "Bar diameter",IDC_STATIC,40,84,70,15
+    LTEXT           "Stirrup diameter",IDC_STATIC,40,105,70,15
+    GROUPBOX        "Bar arrangement",IDC_STATIC,210,50,175,75
+END
+
+IDD_JLOCAL_AXIS DIALOG  0, 0, 186, 116
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Joint Local Axis"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,95,50,14
+    EDITTEXT        IDC_RZ,86,28,57,15,ES_AUTOHSCROLL
+    LTEXT           "about Z:",IDC_STATIC,42,30,33,15
+    EDITTEXT        IDC_RY,86,46,57,15,ES_AUTOHSCROLL
+    LTEXT           "about Y':",IDC_STATIC,42,47,33,15
+    EDITTEXT        IDC_RX,86,63,57,15,ES_AUTOHSCROLL
+    LTEXT           "about X'':",IDC_STATIC,42,64,33,15
+    GROUPBOX        "Rotation in Degrees",IDC_STATIC,20,15,151,70
+END
+
+IDD_RADIAL_GRID DIALOG  0, 0, 126, 143
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Radial"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NXGRID,53,20,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NYGRID,53,35,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NZGRID,53,49,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XGRID,53,84,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YGRID,53,100,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZGRID,53,115,42,13,ES_AUTOHSCROLL
+    LTEXT           "Z",-1,35,49,13,13
+    LTEXT           "Q",-1,35,35,13,13
+    LTEXT           "R",-1,35,20,13,13
+    GROUPBOX        "Number of Grids",-1,23,9,75,55
+    LTEXT           "R",-1,35,84,13,13
+    LTEXT           "Q",-1,35,100,13,13
+    GROUPBOX        "Spacing",-1,23,75,75,55
+    LTEXT           "Z",-1,35,115,13,13
+END
+
+IDD_LOADCASE DIALOG  0, 0, 185, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Load case property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,116,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,116,50,14
+    EDITTEXT        IDC_NAME,27,28,83,12,ES_AUTOHSCROLL
+    GROUPBOX        "Name",IDC_STATIC,19,14,99,32
+    COMBOBOX        IDC_TYPE,27,65,83,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Type",IDC_STATIC,19,54,99,31
+    EDITTEXT        IDC_SWM,109,93,52,13,ES_AUTOHSCROLL
+    CTEXT           "Self weight multiplier:",IDC_STATIC,21,90,79,16,SS_CENTERIMAGE
+END
+
+IDD_ANALYSIS DIALOGEX 0, 0, 357, 162
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "_"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,145,135,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,135,50,14
+    DEFPUSHBUTTON   "Run",IDC_RUN,45,135,50,14
+    LISTBOX         IDC_LIST,35,26,64,74,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Status:",IDC_STATIC,115,27,59,13,SS_CENTERIMAGE
+    CTEXT           "Action:",IDC_STATIC,115,63,59,13,SS_CENTERIMAGE
+    PUSHBUTTON      "Switch Action",IDC_CHANGEACTION,116,99,59,15
+    LTEXT           "Static",IDC_STATUS,115,43,59,13,SS_SUNKEN,WS_EX_CLIENTEDGE
+    LTEXT           "Static",IDC_ACTION,115,79,59,13,SS_SUNKEN,WS_EX_CLIENTEDGE
+    GROUPBOX        "",IDC_STATIC,21,8,324,117
+    COMBOBOX        IDC_STIFFNESS,205,40,115,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Start from end of non-linear case",IDC_STATIC,190,25,145,40
+END
+
+IDD_COMBINATION DIALOG  0, 0, 324, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,165,50,14
+    EDITTEXT        IDC_NAME,70,10,115,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOADCASE,25,71,83,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST,25,87,165,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FS,111,71,79,12,ES_AUTOHSCROLL
+    CTEXT           "Load Case",IDC_STATIC,25,60,81,8
+    CTEXT           "Multiplier",IDC_STATIC,113,60,76,8
+    RTEXT           "Name:",IDC_STATIC,35,10,26,13
+    PUSHBUTTON      "Delete Case",IDC_DELETE,211,111,71,15
+    DEFPUSHBUTTON   "Add Case",IDC_ADD,211,74,71,15
+    PUSHBUTTON      "Move Case",IDC_MOVE,211,92,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,211,130,71,15
+    GROUPBOX        "Click to:",IDC_STATIC,203,60,87,89
+    COMBOBOX        IDC_TYPE,70,30,115,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,25,0,170,50
+    LTEXT           "Type",IDC_STATIC,40,30,22,14
+END
+
+IDD_PASTE DIALOG  0, 0, 126, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Offset by"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,74,50,14
+    EDITTEXT        IDC_X,47,10,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,47,28,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z,47,46,48,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,25,10,16,13
+    LTEXT           "Y",IDC_STATIC,25,28,16,13
+    LTEXT           "Z",IDC_STATIC,25,46,16,13
+    GROUPBOX        "",IDC_STATIC,17,1,87,67
+END
+
+IDD_CONSTRAINT DIALOG  0, 0, 212, 197
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Joint Constraints"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,40,175,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,175,50,14
+    EDITTEXT        IDC_NAME,27,15,49,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TYPE,110,15,80,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST,28,52,37,93,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SYSTEM,110,55,80,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "UX",IDC_NUX,"Button",BS_AUTORADIOBUTTON | WS_GROUP,115,75,26,10
+    CONTROL         "UY",IDC_NUY,"Button",BS_AUTORADIOBUTTON,115,90,26,10
+    CONTROL         "UZ",IDC_NUZ,"Button",BS_AUTORADIOBUTTON,115,105,26,10
+    CONTROL         "RX",IDC_RX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,75,31,10
+    CONTROL         "RY",IDC_RY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,90,31,10
+    CONTROL         "RZ",IDC_RZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,105,31,10
+    CONTROL         "UX",IDC_UX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,75,30,10
+    CONTROL         "UY",IDC_UY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,90,30,10
+    CONTROL         "UZ",IDC_UZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,105,30,10
+    CONTROL         "Auto",IDC_NRX,"Button",BS_AUTORADIOBUTTON,151,75,31,10
+    GROUPBOX        "Joints",IDC_STATIC,15,40,65,115
+    GROUPBOX        "Name",IDC_STATIC,15,5,77,29
+    GROUPBOX        "Direction of Constraint",IDC_STATIC,100,40,95,85
+    GROUPBOX        "Type",IDC_STATIC,100,5,95,30
+    EDITTEXT        IDC_TOLERANCE,115,140,70,15,ES_AUTOHSCROLL
+    GROUPBOX        "Tolerance",IDC_STATIC,95,130,105,35
+    EDITTEXT        IDC_COVER,85,125,125,50,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+END
+
+IDD_MODALCASE DIALOG  0, 0, 312, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Modal case property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,115,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,200,115,50,14
+    EDITTEXT        IDC_NAME,23,21,89,15,ES_AUTOHSCROLL
+    GROUPBOX        "Name",IDC_STATIC,15,10,107,32
+    EDITTEXT        IDC_MIN,57,69,53,12,ES_AUTOHSCROLL
+    RTEXT           "Min:",IDC_STATIC,23,69,26,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_MAX,57,87,53,12,ES_AUTOHSCROLL
+    RTEXT           "Max:",IDC_STATIC,23,87,26,13,SS_CENTERIMAGE
+    GROUPBOX        "Number of modes",IDC_STATIC,15,55,108,54
+    EDITTEXT        IDC_SHIFT,220,25,70,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOLERANCE,220,50,70,15,ES_AUTOHSCROLL
+    CTEXT           "Frequency Shift:",IDC_STATIC,150,25,60,15,SS_CENTERIMAGE
+    CTEXT           "Tolerance:",IDC_STATIC,150,50,60,15,SS_CENTERIMAGE
+    GROUPBOX        "Other parameters",IDC_STATIC,145,15,160,55
+END
+
+IDD_RESULT DIALOG  0, 0, 139, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Result Display Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,25,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,25,50,14
+    RTEXT           "Index:",IDC_STATIC,10,7,55,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_MODE,70,5,55,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ANALYSIS_OPTIONS DIALOG  0, 0, 362, 132
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Analysis options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,90,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,105,50,14
+    GROUPBOX        "Static dofs",IDC_STATIC,25,0,210,95
+    CONTROL         "UX",IDC_NUX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,30,26,10
+    CONTROL         "UY",IDC_NUY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,44,26,10
+    CONTROL         "UZ",IDC_NUZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,58,26,10
+    CONTROL         "RX",IDC_NRX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,30,26,10
+    CONTROL         "RY",IDC_NRY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,44,26,10
+    CONTROL         "RZ",IDC_NRZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,58,26,10
+    PUSHBUTTON      "Space frame",IDC_SPACEFRAME,160,10,60,15
+    PUSHBUTTON      "Plane frame (XZ)",IDC_PLANEFRAME,160,25,60,15
+    PUSHBUTTON      "Plane truss(XZ)",IDC_PLANETRUSS,160,40,60,15
+    PUSHBUTTON      "Space truss",IDC_SPACETRUSS,160,55,60,15
+    PUSHBUTTON      "Plane grid(XY)",IDC_PLANEGRID,160,70,60,15
+    CONTROL         "UX",IDC_FUX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,285,25,26,10
+    CONTROL         "UY",IDC_FUY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,285,40,26,10
+    CONTROL         "UZ",IDC_FUZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,285,55,26,10
+    GROUPBOX        "Dynamic dofs",IDC_STATIC,250,0,90,95
+END
+
+IDD_FUNCTION DIALOGEX 0, 0, 412, 278
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Function Editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,255,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,255,50,14
+    LISTBOX         IDC_LX,10,41,65,95,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LY,80,41,65,95,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EX,10,25,65,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EY,80,25,65,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,55,0,65,15,ES_AUTOHSCROLL
+    RTEXT           "Name:",IDC_STATIC,10,0,40,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Delete",IDC_DELETE,168,86,71,15
+    DEFPUSHBUTTON   "Add",IDC_ADD,168,48,71,15
+    PUSHBUTTON      "Move",IDC_MOVE,168,67,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,168,104,71,15
+    GROUPBOX        "Click to:",IDC_STATIC,160,35,87,90
+    GROUPBOX        "Function type",IDC_STATIC,260,50,140,125
+    EDITTEXT        IDC_PERIOD,330,80,45,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMPLITUDE,330,95,45,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CYCLES,330,110,45,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIVISIONS,330,126,45,10,ES_AUTOHSCROLL
+    RTEXT           "Period:",IDC_STATIC,290,80,35,10
+    RTEXT           "Amplitude:",IDC_STATIC,290,95,35,10
+    RTEXT           "Cycles:",IDC_STATIC,290,110,35,10
+    RTEXT           "Divisions / cycle:",IDC_STATIC,265,126,60,10
+    COMBOBOX        IDC_TYPE,295,60,80,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_DRAWING,10,150,235,94,SS_NOTIFY | SS_SUNKEN | WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_AG,330,140,50,10,ES_AUTOHSCROLL
+    LTEXT           "Ground Accel.(Ag)",IDC_STATIC,265,140,60,10
+    RTEXT           "Soil Type",IDC_STATIC,295,155,30,10
+    COMBOBOX        IDC_SOILTYPE,330,155,50,40,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COVER1,265,75,130,60,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_COVER2,265,140,125,30,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_FILE,160,5,190,15,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_BROWSE,355,5,50,15
+    EDITTEXT        IDC_FUNCTION_VALUE,260,195,100,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_RESPONSESPEC DIALOG  0, 0, 487, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Response Spectrum Case"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,185,195,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,290,195,50,14
+    EDITTEXT        IDC_NAME,18,20,83,12,ES_AUTOHSCROLL
+    GROUPBOX        "Name",IDC_STATIC,10,5,99,32
+    COMBOBOX        IDC_MODALCASE,80,53,75,37,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Use Modal Case:",IDC_STATIC,20,55,54,8
+    GROUPBOX        "",IDC_STATIC,10,45,155,26
+    GROUPBOX        "",IDC_STATIC,175,15,305,95
+    COMBOBOX        IDC_FUNCTION,245,30,74,37,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SCALE,330,30,45,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DIR,190,30,45,40,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Modal Combination",IDC_STATIC,235,120,75,55
+    GROUPBOX        "Directional Combination",IDC_STATIC,320,120,85,55
+    LISTBOX         IDC_LISTDIR,190,50,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_DELETE,390,67,71,15
+    DEFPUSHBUTTON   "Add",IDC_ADD,390,30,71,15
+    PUSHBUTTON      "Move",IDC_MOVE,390,49,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,390,86,71,15
+    LISTBOX         IDC_LISTFUNCTION,245,50,75,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTSCALE,330,50,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ABSSUM",IDC_ABSSUM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,255,130,46,10
+    CONTROL         "SRSS",IDC_SRSS,"Button",BS_AUTORADIOBUTTON,255,145,35,10
+    CONTROL         "CQC",IDC_CQC,"Button",BS_AUTORADIOBUTTON,255,160,31,10
+    CONTROL         "ABSSUM",IDC_DIRABSSUM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,345,130,46,10
+    CONTROL         "SRSS",IDC_DIRSRSS,"Button",BS_AUTORADIOBUTTON,345,145,35,10
+    PUSHBUTTON      "Damping",IDC_DAMPING,35,95,100,15
+    GROUPBOX        "",IDC_STATIC,10,80,155,40
+END
+
+IDD_RESPONSECASE DIALOG  0, 0, 487, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Response History Case"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,185,195,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,290,195,50,14
+    EDITTEXT        IDC_NAME,18,20,83,12,ES_AUTOHSCROLL
+    GROUPBOX        "Name",IDC_STATIC,10,5,99,32
+    COMBOBOX        IDC_MODALCASE,80,53,75,37,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Use Modal Case:",IDC_STATIC,20,55,54,8
+    GROUPBOX        "",IDC_STATIC,10,45,155,26
+    GROUPBOX        "",IDC_STATIC,175,15,305,95
+    COMBOBOX        IDC_FUNCTION,245,30,74,37,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SCALE,330,30,45,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DIR,190,30,45,40,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTDIR,190,50,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_DELETE,390,67,71,15
+    DEFPUSHBUTTON   "Add",IDC_ADD,390,30,71,15
+    PUSHBUTTON      "Move",IDC_MOVE,390,49,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,390,86,71,15
+    LISTBOX         IDC_LISTFUNCTION,245,50,75,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTSCALE,330,50,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Periodic",IDC_PERIODIC,"Button",BS_AUTORADIOBUTTON | WS_GROUP,185,131,41,10
+    CONTROL         "Transient",IDC_TRANSIENT,"Button",BS_AUTORADIOBUTTON,185,150,45,10
+    GROUPBOX        "",IDC_STATIC,175,120,65,55
+    CONTROL         "Modal",IDC_MODAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,260,131,35,10
+    CONTROL         "Direct Integration",IDC_DIRECTINT,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,260,150,70,10
+    GROUPBOX        "",IDC_STATIC,250,120,85,55
+    EDITTEXT        IDC_N,400,131,50,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STEP,400,156,50,15,ES_AUTOHSCROLL
+    RTEXT           "No of steps:",IDC_STATIC,356,131,40,15,SS_CENTERIMAGE
+    RTEXT           "Step Size:",IDC_STATIC,356,155,40,15,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,350,120,110,55
+    PUSHBUTTON      "Damping",IDC_DAMPING,35,95,100,15
+    GROUPBOX        "",IDC_STATIC,10,80,155,40
+END
+
+IDD_MEMBER_LOAD DIALOGEX 0, 0, 302, 187
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Member Loads"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,165,50,14
+    EDITTEXT        IDC_DISTANCE1,69,105,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOAD1,69,123,47,12,ES_AUTOHSCROLL
+    LTEXT           "Load:",IDC_STATIC,33,125,31,8
+    LTEXT           "Distance:",IDC_STATIC,33,109,31,8
+    EDITTEXT        IDC_DISTANCE2,121,105,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOAD2,121,123,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISTANCE3,173,106,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOAD3,173,123,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISTANCE4,225,106,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOAD4,225,123,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNIFORM,95,143,48,13,ES_AUTOHSCROLL
+    LTEXT           "Uniform:",IDC_STATIC,59,143,31,13
+    COMBOBOX        IDC_LOADCASE,31,13,83,52,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Load Case",IDC_STATIC,23,2,98,28
+    GROUPBOX        "Options",IDC_STATIC,190,35,105,60
+    CONTROL         "Add to existing load",IDC_ADD_TO_EXISTING,"Button",BS_AUTORADIOBUTTON | WS_GROUP,194,49,83,10
+    CONTROL         "Replace existing load",IDC_REPLACE_EXISTING,"Button",BS_AUTORADIOBUTTON,194,63,83,10
+    CONTROL         "Delete existing load",IDC_DELETE_EXISTING,"Button",BS_AUTORADIOBUTTON,194,78,83,10
+    GROUPBOX        "Load Direction",IDC_STATIC,20,35,83,60
+    GROUPBOX        "Coordinate Systerm",IDC_STATIC,106,35,79,40
+    COMBOBOX        IDC_LOADDIR,27,48,70,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Force",IDC_FORCETYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,27,63,34,10
+    CONTROL         "Moment",IDC_MOMENTTYPE,"Button",BS_AUTORADIOBUTTON,27,78,41,10
+    EDITTEXT        IDC_COVER,45,140,115,20,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+    CONTROL         "Use relative distance",IDC_RELATIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,145,82,10
+    COMBOBOX        IDC_SYSTEM,110,50,70,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SLAB_DATA DIALOG  0, 0, 364, 197
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Slab Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,145,50,14
+    GROUPBOX        "",-1,5,0,350,185
+    LTEXT           "Section Name:",-1,24,36,50,10
+    GROUPBOX        "",-1,20,25,141,30
+    COMBOBOX        IDC_SECTION_LIST,82,36,68,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit Section",IDC_EDIT_SECTION,20,60,140,15
+    LISTBOX         IDC_FORCE_LIST,195,25,140,134,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Forces",-1,187,15,158,155
+    PUSHBUTTON      "Edit Local Axis",IDC_EDIT_AXIS,20,80,140,15
+    PUSHBUTTON      "Edit Slab Divisions",IDC_EDIT_DIVISIONS,20,100,140,15
+END
+
+IDD_CHART DIALOG  0, 0, 530, 297
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Interaction Chart"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_CHART,7,7,343,283,SS_NOTIFY | SS_SUNKEN | WS_BORDER
+    PUSHBUTTON      "U",IDC_UP,419,23,16,18
+    PUSHBUTTON      "D",IDC_DOWN,419,41,16,18
+    CONTROL         "Surface",IDC_SURFACE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,403,124,48,10
+    CONTROL         "Uniaxial",IDC_UNIAXIAL,"Button",BS_AUTORADIOBUTTON,403,138,48,10
+    CONTROL         "Biaxial",IDC_BIAXIAL,"Button",BS_AUTORADIOBUTTON,403,154,48,10
+    GROUPBOX        "",IDC_STATIC,397,114,73,55
+    GROUPBOX        "",IDC_STATIC,360,14,138,93
+    EDITTEXT        IDC_INDEX,367,63,124,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CURRENT,367,86,126,16,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_MLOCAL_AXIS DIALOG  0, 0, 147, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,55,50,14
+    EDITTEXT        IDC_RX,40,25,65,15,ES_AUTOHSCROLL
+    GROUPBOX        "Rotation in Degrees from default",-1,10,10,125,40
+END
+
+IDD_SELECT_DATABASE DIALOG  0, 0, 150, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,18,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,56,50,14
+    LISTBOX         IDC_DATA_LIST,16,18,53,64,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Database",IDC_STATIC,7,0,76,98
+END
+
+IDD_GROUP_PROPERTY DIALOG  0, 0, 287, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Group property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,140,50,14
+    EDITTEXT        IDC_NAME,132,18,50,15,ES_AUTOHSCROLL
+    CTEXT           "Name:",IDC_STATIC,82,18,46,13,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,65,10,138,30
+    LISTBOX         IDC_JLIST,33,57,54,66,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Joints",IDC_STATIC,20,45,77,87
+    LISTBOX         IDC_MLIST,123,57,54,66,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Members",IDC_STATIC,110,45,77,87
+    LISTBOX         IDC_SLIST,209,57,54,66,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Slabs",IDC_STATIC,195,45,77,87
+END
+
+IDD_NEW DIALOG  0, 0, 277, 78
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,80,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,55,50,14
+    CONTROL         "Blank",IDC_BLANK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,45,10,34,10
+    CONTROL         "Grid",IDC_GRID,"Button",BS_AUTORADIOBUTTON,45,25,34,10
+    CONTROL         "Beam",IDC_BEAM2D,"Button",BS_AUTORADIOBUTTON,45,40,34,10
+    CONTROL         "Plane truss",IDC_PLANETRUSS,"Button",BS_AUTORADIOBUTTON,100,10,51,10
+    CONTROL         "Space truss",IDC_SPACETRUSS,"Button",BS_AUTORADIOBUTTON,100,25,53,10
+    CONTROL         "Plane frame",IDC_PLANEFRAME,"Button",BS_AUTORADIOBUTTON,165,10,53,10
+    CONTROL         "Space frame",IDC_SPACEFRAME,"Button",BS_AUTORADIOBUTTON,165,25,60,10
+    CONTROL         "Slab",IDC_SLAB,"Button",BS_AUTORADIOBUTTON,225,10,30,10
+    CONTROL         "Wall",IDC_SHEARWALL,"Button",BS_AUTORADIOBUTTON,225,25,30,10
+    CONTROL         "Shell",IDC_SHELL,"Button",BS_AUTORADIOBUTTON,225,40,31,10
+END
+
+IDD_NEW_3DFRAME DIALOG  0, 0, 317, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Frame"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,40,120,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,120,50,14
+    EDITTEXT        IDC_NSTOREY,105,35,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NBAYX,105,55,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHEIGHT,245,35,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BWIDTHX,245,55,50,12,ES_AUTOHSCROLL
+    LTEXT           "Number of stories",IDC_STATIC,35,35,60,10
+    LTEXT           "Number of bays, X",IDC_STATIC,35,55,60,10
+    LTEXT           "Story height",IDC_STATIC,195,35,40,8
+    LTEXT           "Bay width,X",IDC_STATIC,195,55,40,10
+    EDITTEXT        IDC_NBAYY,105,75,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BWIDTHY,245,75,50,12,ES_AUTOHSCROLL
+    LTEXT           "Number of bays,Y",IDC_STATIC,35,75,60,10
+    LTEXT           "Bay width,Y",IDC_STATIC,195,75,40,10
+    EDITTEXT        IDC_COVER,25,70,280,20,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "Add Restraints",IDC_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,205,100,62,10
+    CTEXT           "Frame type",IDC_STATIC,25,10,35,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE,65,10,90,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_GAPWIDTH,105,100,50,12,ES_AUTOHSCROLL
+    LTEXT           "Gap Width",IDC_GAPTEXT,35,100,65,15
+END
+
+IDD_SYSTEM_ORIGIN DIALOG  0, 0, 147, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "System Origin"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,135,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,135,50,14
+    EDITTEXT        IDC_UX,60,20,45,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UY,60,35,45,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UZ,60,50,45,10,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,30,20,20,10
+    LTEXT           "Y",IDC_STATIC,30,35,20,10
+    LTEXT           "Z",IDC_STATIC,30,50,20,10
+    GROUPBOX        "Translation",IDC_STATIC,15,5,115,60
+    EDITTEXT        IDC_RX,60,115,45,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RY,60,100,45,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RZ,60,85,45,10,ES_AUTOHSCROLL
+    LTEXT           "X''",IDC_STATIC,30,115,20,10
+    LTEXT           "Y'",IDC_STATIC,30,100,20,10
+    LTEXT           "Z",IDC_STATIC,30,85,20,10
+    GROUPBOX        "Rotation",IDC_STATIC,15,70,115,60
+END
+
+IDD_STRESS_DIAGRAM DIALOGEX 0, 0, 407, 327
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Stress Diagrams"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,140,305,90,15
+    CTEXT           "Case",IDC_STATIC,15,10,35,10,SS_CENTERIMAGE
+    CTEXT           "Item",IDC_STATIC,15,30,35,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_ITEM_DIRECTION,55,30,90,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,10,0,150,60
+    LTEXT           "",IDC_SHEAR,20,81,255,50,SS_NOTIFY,WS_EX_STATICEDGE
+    GROUPBOX        "Force diagram",IDC_STATIC,10,70,370,65
+    LTEXT           "",IDC_SHEAR_VALUE,290,90,85,40
+    LTEXT           "",IDC_MOMENT,20,150,255,50,SS_NOTIFY,WS_EX_STATICEDGE
+    GROUPBOX        "Moment diagram",IDC_STATIC,10,140,370,65
+    LTEXT           "",IDC_MOMENT_VALUE,290,161,85,40
+    LTEXT           "",IDC_NAME,55,10,90,15,SS_SUNKEN
+    CONTROL         "Moment at section:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,285,145,90,15
+    LTEXT           "Force at section:",IDC_STATIC,285,76,90,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_SECTION,190,35,55,15,ES_AUTOHSCROLL
+    GROUPBOX        "Location",IDC_STATIC,180,0,110,60
+    COMBOBOX        IDC_SCROLL,190,15,90,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_DEFLECTION,20,220,255,50,SS_NOTIFY,WS_EX_STATICEDGE
+    GROUPBOX        "Deflection",IDC_STATIC,10,210,370,85
+    LTEXT           "",IDC_DEFLECTION_VALUE,290,231,85,40
+    CONTROL         "Deflection at section:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,285,215,90,15
+    CONTROL         "Absolute",IDC_ABSOLUTE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,70,280,45,10
+    CONTROL         "Relative to beam ends",IDC_RELATIVE,"Button",BS_AUTORADIOBUTTON,210,280,85,10
+END
+
+IDD_NEW_BEAM DIALOG  0, 0, 262, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Beam"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,60,50,14
+    EDITTEXT        IDC_NSPAN,75,5,50,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPANLENGTH,200,5,50,15,ES_AUTOHSCROLL
+    LTEXT           "Span Length",IDC_STATIC,150,5,50,15,SS_CENTERIMAGE
+    LTEXT           "Number of spans",IDC_STATIC,10,5,65,15,SS_CENTERIMAGE
+    CONTROL         "Restraints",IDC_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,35,47,10
+END
+
+IDD_NEW_2DTRUSS DIALOG  0, 0, 382, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Plane Truss"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,80,120,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,120,50,14
+    EDITTEXT        IDC_NDIV,111,30,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIVLENGTH,111,45,50,12,ES_AUTOHSCROLL
+    LTEXT           "Division Length",IDC_STATIC,50,45,50,10,SS_CENTERIMAGE
+    LTEXT           "Number of divisions",IDC_STATIC,40,30,65,10,SS_CENTERIMAGE
+    CONTROL         "Restraints",IDC_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,90,47,10
+    EDITTEXT        IDC_HEIGHT,111,60,50,12,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,75,60,25,10,SS_CENTERIMAGE
+    CTEXT           "Truss type",IDC_STATIC,15,5,35,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE,55,5,90,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COVER1,30,25,145,55,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_L1,215,30,50,12,ES_AUTOHSCROLL
+    LTEXT           "L1",IDC_STATIC,185,30,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_L2,215,45,50,12,ES_AUTOHSCROLL
+    LTEXT           "L2",IDC_STATIC,185,45,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_N1,305,30,50,12,ES_AUTOHSCROLL
+    LTEXT           "N1",IDC_STATIC,275,30,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_N2,305,45,50,12,ES_AUTOHSCROLL
+    LTEXT           "N2",IDC_STATIC,275,45,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_H1,215,60,50,12,ES_AUTOHSCROLL
+    LTEXT           "H1",IDC_STATIC,185,60,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_H2,215,75,50,12,ES_AUTOHSCROLL
+    LTEXT           "H2",IDC_STATIC,185,75,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_H3,215,90,50,12,ES_AUTOHSCROLL
+    LTEXT           "H3",IDC_STATIC,185,90,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_COVER2,175,25,185,85,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_NEW_3DTRUSS DIALOG  0, 0, 327, 282
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Space Truss"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,80,150,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,150,50,14
+    CONTROL         "Add Restraints",IDC_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,5,62,10
+    CTEXT           "Truss type",IDC_STATIC,15,5,35,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE,55,5,90,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Add",IDC_ADD,230,45,60,15
+    PUSHBUTTON      "Move",IDC_MOVE,230,65,60,15
+    PUSHBUTTON      "Delete",IDC_DELETE,230,85,60,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,230,105,60,15
+    EDITTEXT        IDC_TH,25,45,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TW,75,45,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAH,125,45,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAW,175,45,45,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_LISTTH,25,60,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTTW,75,60,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTTAH,125,60,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTTAW,175,60,45,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,10,35,295,105
+    EDITTEXT        IDC_NBAYX,90,180,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NBAYY,210,180,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPANX,90,199,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPANY,90,220,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NDIVX,210,199,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NDIVY,210,220,45,12,ES_AUTOHSCROLL
+    LTEXT           "Number of bays,X",IDC_STATIC,20,180,60,10
+    LTEXT           "Span length,X",IDC_STATIC,20,199,60,10
+    LTEXT           "Span length,Y",IDC_STATIC,20,220,60,10
+    LTEXT           "Number of bays,Y",IDC_STATIC,145,180,60,10
+    LTEXT           "Number of divs,X",IDC_STATIC,145,199,60,10
+    LTEXT           "Number of divs,Y",IDC_STATIC,145,220,60,10
+    GROUPBOX        "",IDC_STATIC,15,170,250,90
+    EDITTEXT        IDC_HEIGHT,90,239,45,12,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,20,239,60,10
+    EDITTEXT        IDC_COVER2,10,170,265,100,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+    COMBOBOX        IDC_TOWERTYPE,105,120,80,50,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tele Tower types",IDC_STATIC,40,120,60,10
+    EDITTEXT        IDC_COVER1,5,30,310,120,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+END
+
+IDD_ANALYSIS_PROGRESS DIALOG  0, 0, 457, 287
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Analysis Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,260,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,245,260,50,14
+    LISTBOX         IDC_LIST,15,45,425,210,NOT LBS_NOTIFY | LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Start Time:",IDC_STATIC,15,10,40,10,SS_CENTERIMAGE
+    LTEXT           "End Time:",IDC_STATIC,15,25,40,10,SS_CENTERIMAGE
+    LTEXT           "",IDC_BTIME,65,10,120,10
+    LTEXT           "",IDC_ETIME,65,25,125,10
+    LTEXT           "Elapsed time:",IDC_STATIC,235,10,50,10,SS_CENTERIMAGE
+    LTEXT           "",IDC_ELAPSED,285,10,125,10
+END
+
+IDD_MISC_OPTIONS DIALOG  0, 0, 262, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Miscleneous options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,195,10,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,195,60,50,14
+    EDITTEXT        IDC_DEFLECTION,95,15,55,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORCE,95,34,55,12,ES_AUTOHSCROLL
+    GROUPBOX        "Scale for:",IDC_STATIC,15,5,155,70
+    RTEXT           "Deflection",IDC_STATIC,21,15,60,10
+    RTEXT           "Internal forces",IDC_STATIC,21,37,65,10
+    EDITTEXT        IDC_LOAD,95,55,55,12,ES_AUTOHSCROLL
+    RTEXT           "Load",IDC_STATIC,21,58,65,10
+END
+
+IDD_FUNCTION_PLOT DIALOGEX 0, 0, 257, 162
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Plot"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,140,50,14
+    LTEXT           "",IDC_DRAWING,10,10,235,94,SS_NOTIFY | SS_SUNKEN | WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FUNCTION_VALUE,80,115,100,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PLOT_RESULT DIALOG  0, 0, 242, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Plot Analysis Result"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Done",IDOK,155,105,55,15
+    LISTBOX         IDC_JLIST,35,15,30,70,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Joint",IDC_STATIC,20,0,65,95
+    COMBOBOX        IDC_LISTDIR,110,30,55,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Display",IDC_DISPLAY,155,85,55,15
+    COMBOBOX        IDC_TYPE,110,5,110,45,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SECTION,165,55,55,15,ES_AUTOHSCROLL
+    RTEXT           "Section:",IDC_STATIC,110,55,45,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_COVER1,100,45,135,30,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+END
+
+IDD_ANIMATION DIALOG  0, 0, 222, 72
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Animation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Stop Animation",IDOK,15,50,80,15
+    EDITTEXT        IDC_TIME,45,5,85,15,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Sound",IDC_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,45,25,37,10
+    PUSHBUTTON      "Faster",IDC_FASTER,145,5,40,15
+    PUSHBUTTON      "Slower",IDC_SLOWER,145,25,40,15
+    PUSHBUTTON      "Restart",IDC_REDO,125,50,80,15
+END
+
+IDD_DAMPING DIALOGEX 0, 0, 452, 307
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Damping"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,310,205,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,310,240,50,14
+    GROUPBOX        "Rayleigh Damping",IDC_STATIC,15,60,155,112
+    EDITTEXT        IDC_FM,41,148,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FK,109,148,46,14,ES_AUTOHSCROLL
+    LTEXT           "M:",IDC_STATIC,27,151,10,9
+    LTEXT           "K:",IDC_STATIC,95,151,10,9
+    EDITTEXT        IDC_W1,37,86,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E1,113,86,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_W2,37,102,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E2,113,102,45,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Calculate Damping Coefficient",IDC_CALCULATE,37,127,112,14
+    GROUPBOX        "frequency",IDC_STATIC,29,74,62,47
+    GROUPBOX        "Damping",IDC_STATIC,103,74,62,47
+    COMBOBOX        IDC_TYPE,20,5,90,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Constant Damping",IDC_STATIC,20,20,155,30
+    EDITTEXT        IDC_CONSTANT,100,30,65,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COVER1,5,20,180,35,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_COVER2,5,60,170,115,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+    LTEXT           "",IDC_DRAWING,200,20,235,125,SS_NOTIFY | SS_SUNKEN | WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FUNCTION_VALUE,260,160,100,15,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_LX,15,201,65,95,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LY,85,201,65,95,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EX,15,185,65,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EY,85,185,65,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Delete",IDC_DELETE,173,246,71,15
+    DEFPUSHBUTTON   "Add",IDC_ADD,173,208,71,15
+    PUSHBUTTON      "Move",IDC_MOVE,173,227,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,173,264,71,15
+    GROUPBOX        "Click to:",IDC_STATIC,165,195,87,90
+END
+
+IDD_SELECT_LABELS DIALOG  0, 0, 282, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Select Labels"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,130,50,14
+    LISTBOX         IDC_LIST,25,40,45,120,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ID",IDC_STATIC,15,25,65,145
+    COMBOBOX        IDC_TYPE,15,5,85,65,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MIN,140,45,50,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX,140,65,50,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INC,140,85,50,15,ES_AUTOHSCROLL
+    RTEXT           "Start",IDC_STATIC,95,45,40,15,SS_CENTERIMAGE
+    RTEXT           "End",IDC_STATIC,95,65,40,15,SS_CENTERIMAGE
+    RTEXT           "Increment",IDC_STATIC,95,85,40,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Select",IDC_SELECT,200,50,50,15
+    GROUPBOX        "",IDC_STATIC,90,30,180,80
+    PUSHBUTTON      "Deselect",IDC_DESELECT,200,75,50,15
+END
+
+IDD_DESIGN_OPTIONS DIALOG  0, 0, 447, 242
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Design Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,385,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,385,95,50,14
+    CONTROL         "Same shear reinforcement for the whole length",IDC_SINGLE_SHEAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,160,162,10
+    LISTBOX         IDC_BAR_LIST,31,30,35,90,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Bar diameter for detailing",IDC_STATIC,15,5,340,135
+    PUSHBUTTON      "=>",IDC_ADD,91,65,35,15
+    PUSHBUTTON      "<=",IDC_DELETE,91,90,35,15
+    LISTBOX         IDC_SHEAR_LIST,151,30,35,90,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_BEAM_LIST,201,30,35,90,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_COLUMN_LIST,255,30,35,90,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_SLAB_LIST,305,30,35,90,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Shear",IDC_STATIC,151,15,35,10,SS_CENTERIMAGE
+    CTEXT           "Beam",IDC_STATIC,201,15,35,10,SS_CENTERIMAGE
+    CTEXT           "Column",IDC_STATIC,255,15,35,10,SS_CENTERIMAGE
+    CTEXT           "Slab",IDC_STATIC,305,15,35,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE,71,35,75,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Cut top beam reinforcemnt L/3m away from support",IDC_CUT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,175,175,10
+    COMBOBOX        IDC_LAYERS,115,190,40,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Maximum rebar layers",IDC_STATIC,25,190,80,15
+    EDITTEXT        IDC_SPACING,115,210,40,12,ES_AUTOHSCROLL
+    LTEXT           "Minimum stirrup spacing",IDC_STATIC,25,210,80,15
+    GROUPBOX        "Detailing options",IDC_STATIC,15,145,190,85
+    CONTROL         "List1",IDC_OPTIONS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,215,150,220,75
+END
+
+IDD_SLAB_DIVISIONS DIALOG  0, 0, 187, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Slab Divisions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,85,50,14
+    EDITTEXT        IDC_DIVX,105,15,49,12,ES_AUTOHSCROLL
+    CTEXT           "Shorter Direction (x):",IDC_STATIC,25,15,70,15,SS_CENTERIMAGE
+    GROUPBOX        "Slab mesh divisions",IDC_STATIC,15,5,155,50
+    EDITTEXT        IDC_DIVY,105,30,49,12,ES_AUTOHSCROLL
+    CTEXT           "Longer Direction (y):",IDC_STATIC,25,30,70,15,SS_CENTERIMAGE
+    CONTROL         "Automatic edge constraint",IDC_CONSTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,45,65,98,10
+END
+
+IDD_DESIGN_RESULT DIALOG  0, 0, 507, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Design Result"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,400,125,90,14
+    EDITTEXT        IDC_MEMBER,231,5,55,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SECTION,375,5,55,15,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "Section",IDC_STATIC,325,5,45,15,SS_CENTERIMAGE
+    CTEXT           "Member",IDC_STATIC,185,5,40,15,SS_CENTERIMAGE
+    CTEXT           "Case",IDC_STATIC,15,5,45,15,SS_CENTERIMAGE
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,15,25,475,85
+    PUSHBUTTON      "Overwrites",IDC_OVERWRITES,65,115,95,15
+    EDITTEXT        IDC_NAME,65,5,65,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_TAPERED_SECTION DIALOG  0, 0, 242, 192
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Assign tapered section"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,165,50,14
+    COMBOBOX        IDC_START,25,15,70,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_END,140,15,70,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EIYY,51,130,70,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EIZZ,145,130,70,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "EIyy",IDC_STATIC,25,130,20,10
+    RTEXT           "EIzz",IDC_STATIC,121,130,20,10
+    GROUPBOX        "Start section",IDC_STATIC,15,0,100,105
+    GROUPBOX        "End section",IDC_STATIC,130,0,95,105
+    PUSHBUTTON      "Edit",IDC_EDITSS,25,35,70,15
+    PUSHBUTTON      "Edit",IDC_EDITES,140,35,70,15
+    GROUPBOX        "Moment of inertia variation",IDC_STATIC,15,115,210,40
+    EDITTEXT        IDC_SOFFSET,25,80,70,15,ES_AUTOHSCROLL
+    LTEXT           "Offset factor",IDC_STATIC,25,65,70,10
+    EDITTEXT        IDC_EOFFSET,140,80,70,15,ES_AUTOHSCROLL
+    LTEXT           "Offset factor",IDC_STATIC,140,65,70,10
+END
+
+IDD_CURVED_MEMBER DIALOG  0, 0, 262, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Curved Member"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,40,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,50,50,14
+    EDITTEXT        IDC_DIVISIONS,75,0,70,15,ES_AUTOHSCROLL
+    RTEXT           "Segments:",IDC_STATIC,20,0,45,15,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE,170,0,80,40,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_IX,75,25,45,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IY,130,25,45,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IZ,190,25,45,15,ES_AUTOHSCROLL
+    RTEXT           "Third Point:",IDC_STATIC,15,25,55,15,SS_CENTERIMAGE
+    CONTROL         "Single Member",IDC_SINGLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,50,63,10
+END
+
+IDD_SELECT_TABLE DIALOG  0, 0, 507, 252
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Select tables"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,260,225,50,14
+    CONTROL         "Tree1",IDC_TABLE,"SysTreeView32",WS_BORDER | WS_TABSTOP,10,0,350,215
+    GROUPBOX        "Select Cases",IDC_STATIC,370,0,105,105
+    LISTBOX         IDC_SELECT_CASES,380,10,85,85,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TABLE_VIEW DIALOG  0, 0, 498, 262
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Table View"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,410,245,70,14
+    CONTROL         "List1",IDC_TABLE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,25,470,210
+    COMBOBOX        IDC_LIST,295,0,185,100,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_INDEX,90,240,30,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MAX,135,240,30,15,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "of",IDC_STATIC,120,240,15,15,SS_CENTERIMAGE
+END
+
+IDD_NLCASE DIALOG  0, 0, 522, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,330,135,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,445,135,50,14
+    EDITTEXT        IDC_NAME,70,10,115,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOADCASE,25,71,83,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST,25,87,165,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FS,111,71,79,12,ES_AUTOHSCROLL
+    CTEXT           "Load Case",IDC_STATIC,25,60,81,8
+    CTEXT           "Multiplier",IDC_STATIC,113,60,76,8
+    RTEXT           "Name:",IDC_STATIC,35,10,26,13
+    PUSHBUTTON      "Delete Case",IDC_DELETE,211,111,71,15
+    DEFPUSHBUTTON   "Add Case",IDC_ADD,211,74,71,15
+    PUSHBUTTON      "Move Case",IDC_MOVE,211,92,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,211,130,71,15
+    GROUPBOX        "Click to:",IDC_STATIC,203,60,87,89
+    COMBOBOX        IDC_TYPE,70,30,115,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,25,0,170,50
+    LTEXT           "Type",IDC_STATIC,40,30,22,14
+    EDITTEXT        IDC_NSTEPS,435,20,65,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NITERATION,435,45,65,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOLERANCE,435,70,65,15,ES_AUTOHSCROLL
+    LTEXT           "Maximum total steps:",IDC_STATIC,325,20,95,15
+    LTEXT           "Maximum Iteration:",IDC_STATIC,325,45,95,15
+    LTEXT           "Tolerance:",IDC_STATIC,325,70,95,15
+    GROUPBOX        "Solution controls",IDC_STATIC,310,5,205,90
+    CONTROL         "Save end stiffness",IDC_STIFFNESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,105,74,10
+END
+
+IDD_BUCKLING DIALOG  0, 0, 507, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,165,50,14
+    EDITTEXT        IDC_NAME,70,10,115,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOADCASE,25,71,83,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST,25,87,165,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FS,111,71,79,12,ES_AUTOHSCROLL
+    CTEXT           "Load Case",IDC_STATIC,25,60,81,8
+    CTEXT           "Multiplier",IDC_STATIC,113,60,76,8
+    RTEXT           "Name:",IDC_STATIC,35,10,26,13
+    PUSHBUTTON      "Delete Case",IDC_DELETE,211,111,71,15
+    DEFPUSHBUTTON   "Add Case",IDC_ADD,211,74,71,15
+    PUSHBUTTON      "Move Case",IDC_MOVE,211,92,71,15
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,211,130,71,15
+    GROUPBOX        "Click to:",IDC_STATIC,203,60,87,89
+    COMBOBOX        IDC_TYPE,70,30,115,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,25,0,170,50
+    LTEXT           "Type",IDC_STATIC,40,30,22,14
+    EDITTEXT        IDC_NMODES,420,20,65,15,ES_AUTOHSCROLL
+    LTEXT           "Number of buckling modes:",IDC_STATIC,315,20,95,15
+    EDITTEXT        IDC_TOLERANCE,420,45,65,15,ES_AUTOHSCROLL
+    LTEXT           "Tolerance:",IDC_STATIC,315,45,100,15
+    GROUPBOX        "Other options",IDC_STATIC,305,5,190,65
+END
+
+IDD_SLAB_DIAGRAMS DIALOG  0, 0, 142, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Slab Forces/Stresses"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,70,50,14
+    CONTROL         "Average stress",IDC_AVERAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,50,70,10
+    COMBOBOX        IDC_TYPE,35,5,80,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STRESS,35,25,80,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MEMBER_DIVISIONS DIALOG  0, 0, 192, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Member Divisions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,100,50,14
+    EDITTEXT        IDC_DIVISIONS,85,70,70,15,ES_AUTOHSCROLL
+    CTEXT           "Output Divisions:",IDC_STATIC,20,70,55,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_FRAMEDIV,91,30,70,15,ES_AUTOHSCROLL
+    CTEXT           "Divisions:",IDC_STATIC,25,30,55,15,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,15,60,155,30
+    CONTROL         "Divide at intermediate joints",IDC_DIVATINTERIM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,15,102,10
+    GROUPBOX        "",IDC_STATIC,15,5,155,50
+END
+
+IDD_ASECTION_PROPERTY DIALOG  0, 0, 312, 177
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Area Section Property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,80,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,155,50,14
+    EDITTEXT        IDC_SECTION_NAME,147,15,67,15,ES_AUTOHSCROLL
+    CTEXT           "Section Name:",-1,85,16,54,13,SS_CENTERIMAGE
+    GROUPBOX        "",-1,65,7,184,30
+    EDITTEXT        IDC_HEIGHT,68,115,50,15,ES_AUTOHSCROLL
+    LTEXT           "height:",-1,20,116,40,15,SS_CENTERIMAGE
+    GROUPBOX        "",-1,15,105,120,35
+    LTEXT           "Material Name:",-1,151,50,50,10
+    GROUPBOX        "",-1,145,40,141,100
+    COMBOBOX        IDC_MATERIAL_LIST,210,50,68,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit Material",IDC_EDIT_MATERIAL,170,80,98,15
+    GROUPBOX        "Type",-1,15,39,120,61
+    COMBOBOX        IDC_TYPE,35,50,85,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reinforcement bars",IDC_EDIT_REBAR,170,110,98,15
+    COMBOBOX        IDC_STATE_TYPE,35,75,85,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NEW_SLAB DIALOG  0, 0, 317, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Slab"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,65,50,14
+    EDITTEXT        IDC_NBAYX,95,5,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BWIDTHX,235,5,50,12,ES_AUTOHSCROLL
+    LTEXT           "Number of bays, X",-1,15,5,75,10
+    LTEXT           "Bay width,X",-1,185,5,40,10
+    EDITTEXT        IDC_NBAYY,95,25,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BWIDTHY,235,25,50,12,ES_AUTOHSCROLL
+    LTEXT           "Number of bays,Y",-1,15,25,75,10
+    LTEXT           "Bay width,Y",-1,185,25,40,10
+    CONTROL         "Add Restraints",IDC_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,220,65,62,10
+    EDITTEXT        IDC_MIDX,95,45,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIDY,235,45,50,12,ES_AUTOHSCROLL
+    LTEXT           "Middle Strip Width,X",-1,15,45,75,10
+    LTEXT           "Middle Strip Width,Y",-1,160,45,70,10
+END
+
+IDD_NEW_WALL DIALOG  0, 0, 317, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Wall"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,40,50,14
+    EDITTEXT        IDC_NBAYX,95,20,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BWIDTHX,235,20,50,12,ES_AUTOHSCROLL
+    LTEXT           "Number of bays, X",IDC_STATIC,15,20,75,10
+    LTEXT           "Bay width,X",IDC_STATIC,185,20,40,10
+    CONTROL         "Add Restraints",IDC_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,230,40,62,10
+    EDITTEXT        IDC_NSTOREY,95,5,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHEIGHT,235,5,50,12,ES_AUTOHSCROLL
+    LTEXT           "Number of stories",IDC_STATIC,25,5,60,10
+    LTEXT           "Story height",IDC_STATIC,185,5,40,8
+END
+
+IDD_NEW_SHELL DIALOG  0, 0, 317, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "SHELL"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,40,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,75,50,14
+    EDITTEXT        IDC_NSTOREY,105,35,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NANGULAR,105,55,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHEIGHT,245,35,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RADIUS,245,55,50,12,ES_AUTOHSCROLL
+    LTEXT           "Number of stories",-1,35,35,60,10
+    LTEXT           "Number of angular divisions",-1,5,55,90,10
+    LTEXT           "Height",-1,195,35,40,8
+    LTEXT           "Radius",-1,195,55,40,10
+    CONTROL         "Add Restraints",IDC_RESTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,230,75,62,10
+    CTEXT           "Shell Type",-1,25,10,35,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE,65,10,90,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DESIGN_OVERWRITES DIALOG  0, 0, 322, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Design Overwrites"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,145,50,14
+    CONTROL         "List1",IDC_TABLE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,15,5,290,130
+END
+
+IDD_SECTION_MODIFIERS DIALOG  0, 0, 222, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Stiffness modifiers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,70,50,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,5,200,55
+END
+
+IDD_MEMBER_STRAIN DIALOG  0, 0, 302, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Member strain loading"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,105,50,14
+    COMBOBOX        IDC_LOADCASE,28,11,83,52,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Load Case",IDC_STATIC,20,0,98,28
+    GROUPBOX        "Options",IDC_STATIC,180,30,105,65
+    CONTROL         "Add to existing load",IDC_ADD_TO_EXISTING,"Button",BS_AUTORADIOBUTTON | WS_GROUP,184,44,83,10
+    CONTROL         "Replace existing load",IDC_REPLACE_EXISTING,"Button",BS_AUTORADIOBUTTON,184,58,83,10
+    CONTROL         "Delete existing load",IDC_DELETE_EXISTING,"Button",BS_AUTORADIOBUTTON,184,73,83,10
+    COMBOBOX        IDC_TYPE,55,45,115,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Loading",IDC_STATIC,20,30,155,65
+    RTEXT           "Source:",IDC_STATIC,25,45,25,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_VALUE,55,70,60,15,ES_AUTOHSCROLL
+    RTEXT           "Value:",IDC_STATIC,30,70,20,15,SS_CENTERIMAGE
+END
+
+IDD_JOINT_REACTIONS DIALOG  0, 0, 152, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,70,55,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSCROLL | WS_BORDER | WS_TABSTOP,20,5,110,55
+END
+
+IDD_ABOUT DIALOG  0, 0, 262, 267
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,95,250,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,130,10,20,20
+    CTEXT           "Structural Analysis and Design Program",IDC_STATIC,80,50,130,11,SS_SUNKEN
+    CTEXT           "Copyright 2008 Daniel Shawul",IDC_STATIC,100,65,100,13,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC,10,0,240,245
+    CTEXT           "StAnD v1.0",IDC_STATIC,120,35,50,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Contact author for bug reports, feature requests,on how tos and appreciations (sorry no condemnations:) at the following address.\n\nEmail:\n\tdshawul@ceng.aau.edu.et\n\tdshawul@yahoo.com\n\nTel:\n\t+251-911-091575\n\n",IDC_STATIC,15,85,225,80
+    LTEXT           "Postal Address:\n\tAddis Ababa University\n\tFaculty of Technology\n\tBox 385\n\tAddis Ababa, Ethiopia.\n\nThe author will  try to reply  as soon as possible.\n\n\t\tHave Fun!",IDC_STATIC,15,165,225,75
+END
+
+IDD_COLOR DIALOG  0, 0, 292, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Assign Colors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,175,50,15
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSCROLL | WS_BORDER | WS_TABSTOP,20,25,105,105
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSCROLL | WS_BORDER | WS_TABSTOP,155,25,110,135
+    PUSHBUTTON      "Cancel",IDCANCEL,225,175,50,15
+    CONTROL         "List1",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSCROLL | WS_BORDER | WS_TABSTOP,20,155,105,25
+    GROUPBOX        "Internal force diagrams",IDC_STATIC,10,140,125,50
+    GROUPBOX        "Object colors",IDC_STATIC,10,10,125,125
+    GROUPBOX        "Contor plots",IDC_STATIC,145,10,130,160
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CARTESIAN_GRID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_JOINT_RESTRAINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_EDITGRID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_JOINT_LOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_SLAB_DISTRIBUTED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_DATABASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_MATERIAL_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_SECTION_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 440
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    IDD_MEMBER_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_JOINT_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_MEMBER_BREAK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_FORCE_DIAGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_MEMBER_RELEASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_REBAR_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 410
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_JLOCAL_AXIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_RADIAL_GRID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_LOADCASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_ANALYSIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_COMBINATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_PASTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_CONSTRAINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_MODALCASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_ANALYSIS_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_FUNCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_RESPONSESPEC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_RESPONSECASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_MEMBER_LOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_SLAB_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 357
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_CHART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 523
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_MLOCAL_AXIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_SELECT_DATABASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_GROUP_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_NEW_3DFRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_SYSTEM_ORIGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_STRESS_DIAGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 320
+    END
+
+    IDD_NEW_BEAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_NEW_2DTRUSS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_NEW_3DTRUSS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_ANALYSIS_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 450
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_MISC_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_FUNCTION_PLOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_PLOT_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_ANIMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_DAMPING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 445
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+
+    IDD_SELECT_LABELS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DESIGN_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 440
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_SLAB_DIVISIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DESIGN_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 500
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_TAPERED_SECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_CURVED_MEMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_SELECT_TABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 500
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_TABLE_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_NLCASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_BUCKLING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 500
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_SLAB_DIAGRAMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_MEMBER_DIVISIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_ASECTION_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_NEW_SLAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_NEW_WALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_NEW_SHELL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DESIGN_OVERWRITES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_SECTION_MODIFIERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_MEMBER_STRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_JOINT_REACTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_VIEWTOOL TOOLBAR  18, 15
+BEGIN
+    BUTTON      IDM_SHOWGRIDS
+    BUTTON      IDM_SHOWORIGIN
+    SEPARATOR
+    BUTTON      IDM_RIGHT
+    BUTTON      IDM_LEFT
+    BUTTON      IDM_UP
+    BUTTON      IDM_DOWN
+END
+
+IDR_DRAWTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDM_SELECT
+    SEPARATOR
+    BUTTON      IDM_ADD_JOINT
+    BUTTON      IDM_ADD_MEMBER
+    BUTTON      IDM_ADD_CURVED_MEMBER
+    BUTTON      IDM_QUICK_DRAW_MEMBER
+    BUTTON      IDM_ADD_RECT_AREA
+    BUTTON      IDM_ADD_QUAD_AREA
+END
+
+IDR_SELECTTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDM_SELECT_ALL
+    BUTTON      IDM_DESELECT_ALL
+    BUTTON      IDM_LINE_SELECT
+END
+
+IDR_SNAPTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SNAP_TO_GRID
+    BUTTON      ID_SNAP_TO_JOINT
+    BUTTON      ID_SNAP_TO_MEMBERMID
+    BUTTON      ID_SNAP_TO_MEMBER
+END
+
+IDR_ANALYSISTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDM_DIAGRAMS
+    BUTTON      IDM_REACTIONS
+    BUTTON      IDM_DISPLACEMENT
+    BUTTON      IDM_DEFLECTED
+    BUTTON      IDM_SHOW_LOADS
+    BUTTON      IDM_ANIMATE
+    BUTTON      IDM_SHOW_RESULT
+END
+
+IDR_DESIGNTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDM_DESIGN
+    BUTTON      IDM_PREPARE_DRAWING
+    BUTTON      IDM_SHOW_DESIGN_RESULT
+END
+
+IDR_EDITTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDM_CUT
+    BUTTON      IDM_COPY
+    BUTTON      IDM_PASTE
+    BUTTON      IDM_DELETE
+    SEPARATOR
+    BUTTON      IDM_MEMBER_BREAK
+    BUTTON      IDM_MEMBER_JOIN
+END
+
+IDR_ASSIGNTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDM_JOINT_RESTRAINT
+    BUTTON      IDM_JOINT_FORCE
+    BUTTON      IDM_JOINT_DISPLACEMENT
+    BUTTON      IDM_JOINT_MASS
+    SEPARATOR
+    BUTTON      IDM_MEMBER_POINT
+    BUTTON      IDM_MEMBER_DISTRIBUTED
+    BUTTON      IDM_MEMBER_STRAIN
+    BUTTON      IDM_MEMBER_RELEASE
+    BUTTON      IDM_MEMBER_SECTION
+    BUTTON      IDM_TAPERED_SECTION
+    BUTTON      IDM_MEMBER_DIVISIONS
+    BUTTON      IDM_MEMBER_AXIS
+    SEPARATOR
+    BUTTON      IDM_SLAB_DISTRIBUTED
+    BUTTON      IDM_SLAB_SECTION
+    BUTTON      IDM_SLAB_AXIS
+    BUTTON      IDM_SLAB_DIAGRAMS
+END
+
+IDR_MAINFRAME TOOLBAR  18, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      IDM_REFRESH
+    BUTTON      ID_DOCUMENT_LOCK
+    BUTTON      IDM_RUN_ANALYSIS
+    SEPARATOR
+    BUTTON      IDM_RUBBERZOOM
+    BUTTON      IDM_RESTOREVIEW
+    BUTTON      IDM_ZOOMIN
+    BUTTON      IDM_ZOOMOUT
+    BUTTON      IDM_PAN
+    SEPARATOR
+    BUTTON      ID_VIEW_XY
+    BUTTON      ID_VIEW_XZ
+    BUTTON      ID_VIEW_YZ
+    BUTTON      ID_VIEW_3D
+    BUTTON      IDM_PERSPECTIVE
+    BUTTON      IDM_DISPLAY_OPTIONS
+    SEPARATOR
+    BUTTON      IDM_MOVEVIEWUP
+    BUTTON      IDM_MOVEVIEWDOWN
+    SEPARATOR
+    BUTTON      IDM_SELECT_LOADCASE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_VIEWTOOL            BITMAP                  "res\\viewtool.bmp"
+IDR_DRAWTOOL            BITMAP                  "res\\drawtool.bmp"
+IDR_SELECTTOOL          BITMAP                  "res\\selecttool.bmp"
+IDR_SNAPTOOL            BITMAP                  "res\\snaptool.bmp"
+IDR_ANALYSISTOOL        BITMAP                  "res\\analysistool.bmp"
+IDR_DESIGNTOOL          BITMAP                  "res\\designtool.bmp"
+IDR_EDITTOOL            BITMAP                  "res\\edittool.bmp"
+IDR_ASSIGNTOOL          BITMAP                  "res\\assigntool.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\maintool.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_DELETE,      ID_DELETE,              VIRTKEY, NOINVERT
+    VK_ESCAPE,      ID_ESCAPE,              VIRTKEY, NOINVERT
+    VK_RETURN,      ID_ENTER,               VIRTKEY, NOINVERT
+    "Y",            IDM_REDO,               VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_UNDO,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_RUBCURSOR           CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "New File\nNew"
+    ID_FILE_OPEN            "Open File\nOpen"
+    ID_FILE_SAVE            "Save File\nSave"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "About StAnD\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "StAnD"
+    IDR_CHILDFRAME          " \nUntitled\nStructure\nStructure Files (*.str)\n.STR\nStructure.Document\nStructure Document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_COORDINATE           "                                                                  "
+    ID_DOCUMENT_LOCK        "Lock document\nLock document"
+    ID_VIEW_XY              "XY plane view\nXY plane view"
+    ID_VIEW_XZ              "XZ plane view\nXZ plane view"
+    ID_VIEW_YZ              "YZ plane view\nYZ plane view"
+    ID_VIEW_3D              "3D view\n3D view"
+    ID_SNAP_TO_GRID         "Snap to grid intersection\nSnap to grid"
+    ID_SNAP_TO_JOINT        "Snap to Joint\nSnap to Joint"
+    ID_SNAP_TO_MEMBERMID    "Snap to Midpoint of member\nSnap to Midpoint"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SNAP_MEMBER          "Snap to Member\nSnap to Member"
+    ID_SNAP_TO_MEMBER       "Snap to Member\nSnap to Member"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_SELECT              "Select mode\nSelect"
+    IDM_ADD_JOINT           "Draw Joint\nDraw Joint"
+    IDM_ADD_MEMBER          "Draw member\nDraw member"
+    IDM_ADD_CURVED_MEMBER   "Draw curved member\nDraw curved member"
+    IDM_ADD_RECT_AREA       "Draw rectangular area\nDraw rectangular area"
+    IDM_ADD_QUAD_AREA       "Draw polygon area\nPolygon"
+    IDM_QUICK_DRAW_MEMBER   "Quick draw member\nQuick draw member"
+    IDM_LINE_SELECT         "Select using intersecting line\nSelect using intersecting line"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_MOVEVIEWUP          "Move one step up\nMove one step up"
+    IDM_MOVEVIEWDOWN        "Move one step down\nMove one step down"
+    IDM_RUN_ANALYSIS        "Run analysis\nRun Analysis"
+    IDM_RUBBERZOOM          "RubberBand zoom\nRubberBand zoom"
+    IDM_RESTOREVIEW         "Restore view\nRubber view"
+    IDM_ZOOMIN              "Zoom in one step\nZoom in one step"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_DEFLECTED           "Draw deflected shape\nDraw deflected shape"
+    IDM_DISPLACEMENT        "Show joint displacements\nShow joint displacements"
+    IDM_REACTIONS           "Show support reactions\nShow support reactions"
+    IDM_SHOW_LOADS          "Draw undeformed shape\nDraw undeformed shape"
+    IDM_SHOW_RESULT         "Show analysis result\nShow analysis result"
+    IDM_DESIGN              "Run EBCS design\nRun EBCS design"
+    IDM_DESIGN_SELECTED     "Design only selected members\nDesign Selected"
+    IDM_SHOW_DESIGN_RESULT  "Show design result\nShow design result"
+    IDM_SYSTEM              "Define coordinate system\nDefine coordinate system"
+    IDM_RIGHT               "Rotate object to the right\nRotate right"
+    IDM_LEFT                "Rotate object to the left\nRotate left"
+    IDM_UP                  "Rotate object upwards\nRotate Up"
+    IDM_DOWN                "Rotate object to the Downwards\nRotate down"
+    IDM_LOAD_CASE           "Define static load cases\nDefine static load cases"
+    IDM_LOAD_COMBO          "Define load combinations\nDefine combinations"
+    IDM_COPY                "Copy object\nCopy"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_MEMBER_JOIN         "Join members\nJoin"
+    IDM_MEMBER_BREAK        "Break member\nBreak"
+    IDM_MEMBER_RELEASE      "Assign member releases\nMember release"
+    IDM_SELECT_ALL_JOINTS   "Select all joints\n Select all joints"
+    IDM_SELECT_ALL_MEMBERS  "Select all members\nSelect all members"
+    IDM_SELECT_ALL_SLABS    "Select all slabs\nSelect all slabs"
+    IDM_SELECT_ALL          "Select all\nSelect all"
+    IDM_DESELECT_ALL_JOINTS "Deselect all joints\nDeselect all joints"
+    IDM_DESELECT_ALL_MEMBERS "Deselect all members\nDeselect all members"
+    IDM_DESELECT_ALL_SLABS  "Deselect all slabs\nDeselect all slabs"
+    IDM_DESELECT_ALL        "Clear Selection\nClear Selection"
+    IDM_INVERT_SELECTION    "Invert selection\nInvert selection"
+    IDM_DEFINE_MATERIAL     "Define material\nDefine material"
+    IDM_DEFINE_FRAME_SECTION "Define frame sections\nDefine frame sections"
+    IDM_DISPLAY_OPTIONS     "View options\nView options"
+    IDM_DIAGRAMS            "Plot force diagrams\nPlot force diagrams"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_CUT                 "Cut Objects\nCut"
+    IDM_PASTE               "Paste object\nPaste"
+    IDM_DELETE              "Delete Objects\nDelete"
+    IDM_SHOWGRIDS           "Show grids\nShow grids"
+    IDM_SHOWORIGIN          "Show origin\nShow origin"
+    IDM_REFRESH             "Refresh view\nRefresh view"
+    IDM_CONSTRAINT          "Define joint constraints\nDefine constraints"
+    IDM_MODAL_CASE          "Define modal analysis cases\nDefine modal analysis cases"
+    IDM_RESPONSE_CASE       "Define response history cases\nDefine response history cases"
+    IDM_ANALYSIS_OPTIONS    "Set analysis options\nAnalysis options"
+    IDM_TIME_HISTORY_FUNC   "Define time history fucntions\nTime history functions"
+    IDM_RESPONSE_SPECTRUM   "Define response spectrum cases\nDefine response spectrum cases"
+    IDM_SPECTRUM_FUNC       "Define response spectrum fucntions\nResponse spectrum functions"
+    IDM_SLAB_SECTION        "Assign slab section\nSlab section"
+    IDM_SLAB_AXIS           "Assign slab local axis\nLocal axis"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_SLAB_DIVISIONS      "Assign slab divisions\nSlab divisions"
+    IDM_SLAB_DISTRIBUTED    "Assign slab load\nSlab load"
+    IDM_SLAB_STRAIN         "Assign strain load\nStrain load"
+    IDM_PREPARE_DRAWING     "Prepare autocad detailing sheet\nPrepare drawing"
+    IDM_PREPARE_DRAWING_SELECTED 
+                            "Prepare AuctoCad Drawing only for selected elements\nPrepare for selected"
+    IDM_SELECT_SECTION      "Select frame sections\nSelect frame sections"
+    IDM_DESELECT_SECTION    "Deselect sections\nDeselect sections"
+    IDM_SELECT_CONSTRAINT   "Select joint constraints\nSelect joint constraints"
+    IDM_DESELECT_CONSTRAINT "Deselect joint constraints\nDeselect joint constraints"
+    IDM_GROUP               "Define group\nDefine group"
+    IDM_ASSIGN_GROUP        "Assign group\nAssign group"
+    IDM_SELECT_GROUP        "Select group\nSelect group"
+    IDM_DESELECT_GROUP      "Deselect group\nDeselect group"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_ZOOMOUT             "Zoom out one step\nZoom out one step"
+    IDM_PAN                 "Pan\nPan"
+    IDM_JOINT_RESTRAINT     "Assign Joint Restraint\nJoint restraint"
+    IDM_JOINT_CONSTRAINT    "Assign joint constraints for all selected joints\nAssign for all"
+    IDM_JOINT_CONSTRAINTX   "Assign joint constraints for each X value\nFor each X"
+    IDM_JOINT_CONSTRAINTY   "Assign joint constraints for each Y value\nFor each Y"
+    IDM_JOINT_CONSTRAINTZ   "Assign joint constraints for each Z value\nFor each Z"
+    IDM_JOINT_FORCE         "Assign Joint Force\nJoint force"
+    IDM_JOINT_DISPLACEMENT  "Assign joint displacements\nJoint displacment"
+    IDM_JOINT_MASS          "Assign joint masses\nJoint masses"
+    IDM_JOINT_AXIS          "Assign joint local axis\nLocal axis"
+    IDM_MEMBER_SECTION      "Assign member section\nAssign section"
+    IDM_MEMBER_POINT        "Assign Concentrated Load\nConcentrated load"
+    IDM_MEMBER_DISTRIBUTED  "Assign Distributed Load\nDistributed load"
+    IDM_MEMBER_STRAIN       "Assign thermal and fabrication error loading\nStrain load"
+    IDM_MEMBER_AXIS         "Assing member local axis\nLocal axis"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_MISC_OPTIONS        "Miscleneous options\nMisc options"
+    IDM_PLOT_FUNCTIONS      "Plot various functions\nPlot functions"
+    IDM_ANIMATE             "Run animation\nRun animation"
+    IDM_SELECT_FROM_ALL     "Select from all nodes and elements\n Select from all"
+    IDM_SELECT_LABELS       "Select labels\nSelect labels"
+    IDM_DESELECT_LABELS     "Deselect labels\nDeselect lables"
+    IDM_DESIGN_OPTIONS      "Set Design/Detailing options\nOptions"
+    IDM_DESIGN_VERIFY       "Verify design\nVerify"
+    IDM_MEMBER_DIVISIONS    "Assign member divisions\nDivisions"
+    IDM_TAPERED_SECTION     "Assign tapered section\nTapered section"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_UNDO                "Undo\nUndo"
+    IDM_REDO                "Redo\nRedo"
+    IDM_NONLINEAR_CASE      "Define non-linear static cases\nDefine static non-linear cases"
+    IDM_BUCKLING            "Define buckling analysis cases\nDefine buckling analysis cases"
+    IDM_SLAB_DIAGRAMS       "Draw slab force contor diagrams\nSlab diagrams"
+    IDM_DEFINE_SLAB_SECTION "Define area sections\nDefine area sections"
+    IDM_SELECT_ASECTION     "Select area sections\\Select area sections"
+    IDM_DESELECT_ASECTION   "Deselect area sections\nDeselect area sections"
+    IDM_DESIGN_COMBOS       "Add default design combinations\nAdd combinations"
+    IDM_PERSPECTIVE         "Perspective"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_SHOW_TABLES         "Generate various databases\nShow tabels"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_ONE_WINDOWS         "One window\nOne window"
+    IDM_TWO_WINDOWS         "Two windows\nTwo windows"
+    IDM_THREE_WINDOWS       "Three windows\nThree windows"
+    IDM_FOUR_WINDOWS        "Four windows\nFour windows"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_RESET_TOOLBARS      "Reset toolbars to original positons\nReset toolbars"
+    IDM_MAINTOOL            "Main\nMain"
+    IDM_ANALYSISTOOL        "Analysis\nAnalysis"
+    IDM_DESIGNTOOL          "Design\nDesign"
+    IDM_DRAWTOOL            "Draw shapes\nDraw"
+    IDM_SELECTTOOL          "Select\nSelect"
+    IDM_VIEWTOOL            "View\nView"
+    IDM_SNAPTOOL            "Snap\nSnap"
+    IDM_EDITTOOL            "Edit\nEdit"
+    IDM_ASSIGNTOOL          "Different node/element assigns\nAssigns"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

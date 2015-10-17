@@ -1,0 +1,17 @@
+﻿  matrix.cpp
+matrix.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library .\Debug/matrix.lib and object .\Debug/matrix.exp
+matrix.obj : error LNK2019: unresolved external symbol _DLFTRB@32 referenced in function "int __cdecl factor_banded_full(double * const,long,long,long *)" (?factor_banded_full@@YAHQANJJPAJ@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DLFTQS@24 referenced in function "int __cdecl factor_banded(double * const,long,long)" (?factor_banded@@YAHQANJJ@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DLSLSF@20 referenced in function "int __cdecl solve(double * * const,long,double * const,double *)" (?solve@@YAHQAPANJQANPAN@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DLFSQS@24 referenced in function "int __cdecl solve_from_factor_banded(double * const,long,long,double * const,double *)" (?solve_from_factor_banded@@YAHQANJJ0PAN@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DLFSRB@36 referenced in function "int __cdecl solve_from_factor_banded_full(double * const,long,long,long *,double * const,double *)" (?solve_from_factor_banded_full@@YAHQANJJPAJ0PAN@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DLINRG@20 referenced in function "int __cdecl invert(double * * const,double * *,long,long,long)" (?invert@@YAHQAPANPAPANJJJ@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DLINDS@20 referenced in function "int __cdecl invertP(double * *,long,long)" (?invertP@@YAHPAPANJJ@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DEVCSF@24 referenced in function "int __cdecl find_eigen(double * *,long,double *,double *)" (?find_eigen@@YAHPAPANJPAN1@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DSBMV@48 referenced in function "int __cdecl multiply_banded(double * const,double * const,double *,long,long)" (?multiply_banded@@YAHQAN0PANJJ@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DCSBRB@32 referenced in function "int __cdecl convert_symm_full(double * const,double *,long,long,long)" (?convert_symm_full@@YAHQANPANJJJ@Z)
+matrix.obj : error LNK2019: unresolved external symbol _DSBAND@124 referenced in function "int __cdecl __find_eigen(double *,double *,long,long,long,long,double,double,double *,double *)" (?__find_eigen@@YAHPAN0JJJJNN00@Z)
+matrix.obj : error LNK2019: unresolved external symbol _ERSET@12 referenced in function "int __cdecl convert_symm_full(double * const,double *,long,long,long)" (?convert_symm_full@@YAHQANPANJJJ@Z)
+matrix.obj : error LNK2019: unresolved external symbol _IERCD@0 referenced in function "int __cdecl convert_symm_full(double * const,double *,long,long,long)" (?convert_symm_full@@YAHQANPANJJJ@Z)
+.\Debug/matrix.dll : fatal error LNK1120: 13 unresolved externals
